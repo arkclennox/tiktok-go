@@ -1,0 +1,15 @@
+# dependensi & unduhan
+runtime/node_modules/
+node_modules/
+template/public/fonts/*.ttf
+template/public/foto/
+template/public/audio/
+template/voice/
+template/out/
+# rahasia & pengaturan lokal (jangan pernah di-commit)
+.env
+.env.*
+*.key
+local.json
+# sistem
+.DS_Store

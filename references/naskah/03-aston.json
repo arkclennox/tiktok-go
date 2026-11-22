@@ -1,0 +1,22 @@
+{
+  "voiceId": "iWydkXKoiVtvdn4vLKp9",
+  "modelId": "eleven_multilingual_v2",
+  "language": "id",
+  "voiceSettings": { "stability": 0.4, "similarity_boost": 0.8, "style": 0.35, "speed": 1.2, "use_speaker_boost": true },
+  "overlap": 0.3,
+  "replace": { "empat ratus ribuan": "400 RIBUAN", "bintang empat": "BINTANG 4", "jam dua": "JAM 2" },
+  "lines": [
+    "Nginep di hotel bintang empat di Jember ternyata nggak semahal yang kamu kira.",
+    "Semalam mulai empat ratus ribuan, kamu udah dapat kamar yang luas.",
+    "Namanya Aston Jember, lokasinya di Jalan Sentot Prawirodirdjo.",
+    "Baru masuk lobinya aja, suasananya udah kerasa mewah.",
+    "Kamarnya lega, kasurnya empuk, jendelanya lebar, enak buat rebahan seharian.",
+    "Yang paling bikin betah, kolam renangnya luas dan airnya jernih.",
+    "Pagi berenang, habis itu turun sarapan, pilihan menunya banyak.",
+    "Mau acara kantor atau kumpul keluarga? Ruang pertemuannya juga ada.",
+    "Pesannya nggak pakai ribet.",
+    "Ketuk tanda lokasi di video ini, pilih tanggal dan kamarnya, terus bayar.",
+    "Datang mulai jam dua siang, kamarmu udah siap.",
+    "Biar nggak kehabisan, amankan kamarmu dari sekarang ya."
+  ]
+}

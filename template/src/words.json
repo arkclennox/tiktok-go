@@ -1,0 +1,755 @@
+{
+ "total": 41.13,
+ "lines": [
+  {
+   "line": 1,
+   "start": 0.15,
+   "end": 4.19,
+   "words": [
+    {
+     "text": "Nginep",
+     "start": 0.15,
+     "end": 0.429,
+     "show": "NGINEP"
+    },
+    {
+     "text": "di",
+     "start": 0.463,
+     "end": 0.51,
+     "show": "DI"
+    },
+    {
+     "text": "hotel",
+     "start": 0.556,
+     "end": 0.777,
+     "show": "HOTEL"
+    },
+    {
+     "text": "bintang",
+     "start": 0.823,
+     "end": 1.032,
+     "show": "BINTANG"
+    },
+    {
+     "text": "empat",
+     "start": 1.079,
+     "end": 1.299,
+     "show": "4"
+    },
+    {
+     "text": "di",
+     "start": 1.323,
+     "end": 1.369,
+     "show": "DI"
+    },
+    {
+     "text": "Jember",
+     "start": 1.439,
+     "end": 1.845,
+     "show": "JEMBER"
+    },
+    {
+     "text": "ternyata",
+     "start": 1.915,
+     "end": 2.182,
+     "show": "TERNYATA"
+    },
+    {
+     "text": "nggak",
+     "start": 2.205,
+     "end": 2.379,
+     "show": "NGGAK"
+    },
+    {
+     "text": "semahal",
+     "start": 2.414,
+     "end": 2.96,
+     "show": "SEMAHAL"
+    },
+    {
+     "text": "yang",
+     "start": 3.134,
+     "end": 3.273,
+     "show": "YANG"
+    },
+    {
+     "text": "kamu",
+     "start": 3.296,
+     "end": 3.47,
+     "show": "KAMU"
+    },
+    {
+     "text": "kira.",
+     "start": 3.505,
+     "end": 4.19,
+     "show": "KIRA"
+    }
+   ]
+  },
+  {
+   "line": 2,
+   "start": 3.89,
+   "end": 7.605,
+   "words": [
+    {
+     "text": "Semalam",
+     "start": 3.89,
+     "end": 4.308,
+     "show": "SEMALAM"
+    },
+    {
+     "text": "mulai",
+     "start": 4.331,
+     "end": 4.517,
+     "show": "MULAI"
+    },
+    {
+     "text": "empat",
+     "start": 4.54,
+     "end": 4.703,
+     "show": "400"
+    },
+    {
+     "text": "ratus",
+     "start": 4.749,
+     "end": 4.958,
+     "show": "RIBUAN"
+    },
+    {
+     "text": "ribuan,",
+     "start": 5.005,
+     "end": 5.573,
+     "show": ""
+    },
+    {
+     "text": "kamu",
+     "start": 5.701,
+     "end": 6.026,
+     "show": "KAMU"
+    },
+    {
+     "text": "udah",
+     "start": 6.049,
+     "end": 6.212,
+     "show": "UDAH"
+    },
+    {
+     "text": "dapat",
+     "start": 6.235,
+     "end": 6.421,
+     "show": "DAPAT"
+    },
+    {
+     "text": "kamar",
+     "start": 6.456,
+     "end": 6.711,
+     "show": "KAMAR"
+    },
+    {
+     "text": "yang",
+     "start": 6.746,
+     "end": 6.839,
+     "show": "YANG"
+    },
+    {
+     "text": "luas.",
+     "start": 6.885,
+     "end": 7.605,
+     "show": "LUAS"
+    }
+   ]
+  },
+  {
+   "line": 3,
+   "start": 7.305,
+   "end": 11.252,
+   "words": [
+    {
+     "text": "Namanya",
+     "start": 7.305,
+     "end": 7.769,
+     "show": "NAMANYA"
+    },
+    {
+     "text": "Aston",
+     "start": 7.793,
+     "end": 8.06,
+     "show": "ASTON"
+    },
+    {
+     "text": "Jember,",
+     "start": 8.106,
+     "end": 8.582,
+     "show": "JEMBER"
+    },
+    {
+     "text": "lokasinya",
+     "start": 8.756,
+     "end": 9.36,
+     "show": "LOKASINYA"
+    },
+    {
+     "text": "di",
+     "start": 9.395,
+     "end": 9.441,
+     "show": "DI"
+    },
+    {
+     "text": "Jalan",
+     "start": 9.511,
+     "end": 9.755,
+     "show": "JALAN"
+    },
+    {
+     "text": "Sentot",
+     "start": 9.813,
+     "end": 10.138,
+     "show": "SENTOT"
+    },
+    {
+     "text": "Prawirodirdjo.",
+     "start": 10.173,
+     "end": 11.252,
+     "show": "PRAWIRODIRDJO"
+    }
+   ]
+  },
+  {
+   "line": 4,
+   "start": 10.952,
+   "end": 13.924,
+   "words": [
+    {
+     "text": "Baru",
+     "start": 10.952,
+     "end": 11.207,
+     "show": "BARU"
+    },
+    {
+     "text": "masuk",
+     "start": 11.242,
+     "end": 11.451,
+     "show": "MASUK"
+    },
+    {
+     "text": "lobinya",
+     "start": 11.474,
+     "end": 11.8,
+     "show": "LOBINYA"
+    },
+    {
+     "text": "aja,",
+     "start": 11.823,
+     "end": 12.252,
+     "show": "AJA"
+    },
+    {
+     "text": "suasananya",
+     "start": 12.322,
+     "end": 12.868,
+     "show": "SUASANANYA"
+    },
+    {
+     "text": "udah",
+     "start": 12.914,
+     "end": 13.065,
+     "show": "UDAH"
+    },
+    {
+     "text": "kerasa",
+     "start": 13.088,
+     "end": 13.355,
+     "show": "KERASA"
+    },
+    {
+     "text": "mewah.",
+     "start": 13.402,
+     "end": 13.924,
+     "show": "MEWAH"
+    }
+   ]
+  },
+  {
+   "line": 5,
+   "start": 13.624,
+   "end": 18.872,
+   "words": [
+    {
+     "text": "Kamarnya",
+     "start": 13.624,
+     "end": 13.996,
+     "show": "KAMARNYA"
+    },
+    {
+     "text": "lega,",
+     "start": 14.042,
+     "end": 14.657,
+     "show": "LEGA"
+    },
+    {
+     "text": "kasurnya",
+     "start": 14.797,
+     "end": 15.168,
+     "show": "KASURNYA"
+    },
+    {
+     "text": "empuk,",
+     "start": 15.203,
+     "end": 15.772,
+     "show": "EMPUK"
+    },
+    {
+     "text": "jendelanya",
+     "start": 15.865,
+     "end": 16.306,
+     "show": "JENDELANYA"
+    },
+    {
+     "text": "lebar,",
+     "start": 16.341,
+     "end": 16.852,
+     "show": "LEBAR"
+    },
+    {
+     "text": "enak",
+     "start": 17.084,
+     "end": 17.386,
+     "show": "ENAK"
+    },
+    {
+     "text": "buat",
+     "start": 17.444,
+     "end": 17.548,
+     "show": "BUAT"
+    },
+    {
+     "text": "rebahan",
+     "start": 17.606,
+     "end": 17.943,
+     "show": "REBAHAN"
+    },
+    {
+     "text": "seharian.",
+     "start": 18.001,
+     "end": 18.872,
+     "show": "SEHARIAN"
+    }
+   ]
+  },
+  {
+   "line": 6,
+   "start": 18.572,
+   "end": 22.148,
+   "words": [
+    {
+     "text": "Yang",
+     "start": 18.572,
+     "end": 18.758,
+     "show": "YANG"
+    },
+    {
+     "text": "paling",
+     "start": 18.781,
+     "end": 19.002,
+     "show": "PALING"
+    },
+    {
+     "text": "bikin",
+     "start": 19.036,
+     "end": 19.199,
+     "show": "BIKIN"
+    },
+    {
+     "text": "betah,",
+     "start": 19.245,
+     "end": 19.721,
+     "show": "BETAH"
+    },
+    {
+     "text": "kolam",
+     "start": 19.896,
+     "end": 20.232,
+     "show": "KOLAM"
+    },
+    {
+     "text": "renangnya",
+     "start": 20.279,
+     "end": 20.581,
+     "show": "RENANGNYA"
+    },
+    {
+     "text": "luas",
+     "start": 20.627,
+     "end": 20.94,
+     "show": "LUAS"
+    },
+    {
+     "text": "dan",
+     "start": 20.998,
+     "end": 21.091,
+     "show": "DAN"
+    },
+    {
+     "text": "airnya",
+     "start": 21.149,
+     "end": 21.382,
+     "show": "AIRNYA"
+    },
+    {
+     "text": "jernih.",
+     "start": 21.416,
+     "end": 22.148,
+     "show": "JERNIH"
+    }
+   ]
+  },
+  {
+   "line": 7,
+   "start": 21.848,
+   "end": 25.981,
+   "words": [
+    {
+     "text": "Pagi",
+     "start": 21.848,
+     "end": 22.127,
+     "show": "PAGI"
+    },
+    {
+     "text": "berenang,",
+     "start": 22.173,
+     "end": 22.754,
+     "show": "BERENANG"
+    },
+    {
+     "text": "habis",
+     "start": 22.846,
+     "end": 23.032,
+     "show": "HABIS"
+    },
+    {
+     "text": "itu",
+     "start": 23.09,
+     "end": 23.218,
+     "show": "ITU"
+    },
+    {
+     "text": "turun",
+     "start": 23.253,
+     "end": 23.415,
+     "show": "TURUN"
+    },
+    {
+     "text": "sarapan,",
+     "start": 23.439,
+     "end": 24.054,
+     "show": "SARAPAN"
+    },
+    {
+     "text": "pilihan",
+     "start": 24.321,
+     "end": 24.716,
+     "show": "PILIHAN"
+    },
+    {
+     "text": "menunya",
+     "start": 24.762,
+     "end": 24.994,
+     "show": "MENUNYA"
+    },
+    {
+     "text": "banyak.",
+     "start": 25.041,
+     "end": 25.981,
+     "show": "BANYAK"
+    }
+   ]
+  },
+  {
+   "line": 8,
+   "start": 25.681,
+   "end": 29.861,
+   "words": [
+    {
+     "text": "Mau",
+     "start": 25.681,
+     "end": 25.89,
+     "show": "MAU"
+    },
+    {
+     "text": "acara",
+     "start": 25.948,
+     "end": 26.215,
+     "show": "ACARA"
+    },
+    {
+     "text": "kantor",
+     "start": 26.261,
+     "end": 26.575,
+     "show": "KANTOR"
+    },
+    {
+     "text": "atau",
+     "start": 26.621,
+     "end": 26.761,
+     "show": "ATAU"
+    },
+    {
+     "text": "kumpul",
+     "start": 26.784,
+     "end": 26.993,
+     "show": "KUMPUL"
+    },
+    {
+     "text": "keluarga?",
+     "start": 27.028,
+     "end": 27.666,
+     "show": "KELUARGA"
+    },
+    {
+     "text": "Ruang",
+     "start": 28.166,
+     "end": 28.375,
+     "show": "RUANG"
+    },
+    {
+     "text": "pertemuannya",
+     "start": 28.398,
+     "end": 28.816,
+     "show": "PERTEMUANNYA"
+    },
+    {
+     "text": "juga",
+     "start": 28.851,
+     "end": 29.06,
+     "show": "JUGA"
+    },
+    {
+     "text": "ada.",
+     "start": 29.094,
+     "end": 29.861,
+     "show": "ADA"
+    }
+   ]
+  },
+  {
+   "line": 9,
+   "start": 29.561,
+   "end": 31.001,
+   "words": [
+    {
+     "text": "Pesannya",
+     "start": 29.561,
+     "end": 30.037,
+     "show": "PESANNYA"
+    },
+    {
+     "text": "nggak",
+     "start": 30.06,
+     "end": 30.188,
+     "show": "NGGAK"
+    },
+    {
+     "text": "pakai",
+     "start": 30.211,
+     "end": 30.397,
+     "show": "PAKAI"
+    },
+    {
+     "text": "ribet.",
+     "start": 30.42,
+     "end": 31.001,
+     "show": "RIBET"
+    }
+   ]
+  },
+  {
+   "line": 10,
+   "start": 30.701,
+   "end": 34.788,
+   "words": [
+    {
+     "text": "Ketuk",
+     "start": 30.701,
+     "end": 30.991,
+     "show": "KETUK"
+    },
+    {
+     "text": "tanda",
+     "start": 31.026,
+     "end": 31.154,
+     "show": "TANDA"
+    },
+    {
+     "text": "lokasi",
+     "start": 31.2,
+     "end": 31.63,
+     "show": "LOKASI"
+    },
+    {
+     "text": "di",
+     "start": 31.676,
+     "end": 31.723,
+     "show": "DI"
+    },
+    {
+     "text": "video",
+     "start": 31.746,
+     "end": 31.955,
+     "show": "VIDEO"
+    },
+    {
+     "text": "ini,",
+     "start": 32.025,
+     "end": 32.442,
+     "show": "INI"
+    },
+    {
+     "text": "pilih",
+     "start": 32.512,
+     "end": 32.802,
+     "show": "PILIH"
+    },
+    {
+     "text": "tanggal",
+     "start": 32.826,
+     "end": 33.081,
+     "show": "TANGGAL"
+    },
+    {
+     "text": "dan",
+     "start": 33.104,
+     "end": 33.209,
+     "show": "DAN"
+    },
+    {
+     "text": "kamarnya,",
+     "start": 33.267,
+     "end": 33.778,
+     "show": "KAMARNYA"
+    },
+    {
+     "text": "terus",
+     "start": 33.836,
+     "end": 34.021,
+     "show": "TERUS"
+    },
+    {
+     "text": "bayar.",
+     "start": 34.08,
+     "end": 34.788,
+     "show": "BAYAR"
+    }
+   ]
+  },
+  {
+   "line": 11,
+   "start": 34.488,
+   "end": 37.135,
+   "words": [
+    {
+     "text": "Datang",
+     "start": 34.488,
+     "end": 34.929,
+     "show": "DATANG"
+    },
+    {
+     "text": "mulai",
+     "start": 34.952,
+     "end": 35.138,
+     "show": "MULAI"
+    },
+    {
+     "text": "jam",
+     "start": 35.173,
+     "end": 35.289,
+     "show": "JAM"
+    },
+    {
+     "text": "dua",
+     "start": 35.336,
+     "end": 35.463,
+     "show": "2"
+    },
+    {
+     "text": "siang,",
+     "start": 35.51,
+     "end": 35.916,
+     "show": "SIANG"
+    },
+    {
+     "text": "kamarmu",
+     "start": 35.951,
+     "end": 36.346,
+     "show": "KAMARMU"
+    },
+    {
+     "text": "udah",
+     "start": 36.369,
+     "end": 36.543,
+     "show": "UDAH"
+    },
+    {
+     "text": "siap.",
+     "start": 36.566,
+     "end": 37.135,
+     "show": "SIAP"
+    }
+   ]
+  },
+  {
+   "line": 12,
+   "start": 36.835,
+   "end": 40.225,
+   "words": [
+    {
+     "text": "Biar",
+     "start": 36.835,
+     "end": 37.09,
+     "show": "BIAR"
+    },
+    {
+     "text": "nggak",
+     "start": 37.114,
+     "end": 37.276,
+     "show": "NGGAK"
+    },
+    {
+     "text": "kehabisan,",
+     "start": 37.299,
+     "end": 38.1,
+     "show": "KEHABISAN"
+    },
+    {
+     "text": "amankan",
+     "start": 38.368,
+     "end": 38.797,
+     "show": "AMANKAN"
+    },
+    {
+     "text": "kamarmu",
+     "start": 38.855,
+     "end": 39.227,
+     "show": "KAMARMU"
+    },
+    {
+     "text": "dari",
+     "start": 39.261,
+     "end": 39.378,
+     "show": "DARI"
+    },
+    {
+     "text": "sekarang",
+     "start": 39.412,
+     "end": 39.726,
+     "show": "SEKARANG"
+    },
+    {
+     "text": "ya.",
+     "start": 39.807,
+     "end": 40.225,
+     "show": "YA"
+    }
+   ]
+  }
+ ]
+}

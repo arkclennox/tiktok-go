@@ -1,0 +1,235 @@
+{
+ "title": [
+  "Aston Jember",
+  "Hotel Bintang 4"
+ ],
+ "card": {
+  "photo": "gm_053.jpg",
+  "badge": "Terlaris",
+  "name": "Superior Room",
+  "chips": [
+   "Hingga 2 tamu",
+   "Wi-Fi gratis"
+  ],
+  "notes": [
+   [
+    "green",
+    "Kolam renang"
+   ],
+   [
+    "green",
+    "Parkir gratis"
+   ],
+   [
+    "muted",
+    "Check-in 14.00"
+   ]
+  ],
+  "price": "417.710",
+  "priceNote": "Harga per malam",
+  "button": "Pesan",
+  "from": [
+   2,
+   "400"
+  ],
+  "toLineEnd": 3
+ },
+ "shots": [
+  {
+   "src": "gm_032.jpg",
+   "line": 1,
+   "move": "zoomIn",
+   "w": 2112,
+   "h": 2112
+  },
+  {
+   "src": "gm_071.jpg",
+   "line": 1,
+   "word": "TERNYATA",
+   "move": "panR",
+   "w": 2816,
+   "h": 2112
+  },
+  {
+   "src": "gm_197.jpg",
+   "line": 2,
+   "move": "panL",
+   "w": 2816,
+   "h": 2112
+  },
+  {
+   "src": "gm_102.jpg",
+   "line": 2,
+   "word": "KAMAR",
+   "move": "zoomIn",
+   "w": 2816,
+   "h": 2112
+  },
+  {
+   "src": "gm_007.jpg",
+   "line": 3,
+   "move": "tiltUp",
+   "w": 1584,
+   "h": 2112
+  },
+  {
+   "src": "gm_010.jpg",
+   "line": 3,
+   "word": "SENTOT",
+   "move": "drift",
+   "w": 1584,
+   "h": 2112
+  },
+  {
+   "src": "gm_051.jpg",
+   "line": 4,
+   "move": "panR",
+   "w": 2816,
+   "h": 2112
+  },
+  {
+   "src": "gm_016.jpg",
+   "line": 4,
+   "word": "MEWAH",
+   "move": "zoomIn",
+   "w": 1584,
+   "h": 2112
+  },
+  {
+   "src": "gm_039.jpg",
+   "line": 5,
+   "move": "panL",
+   "w": 2816,
+   "h": 2112
+  },
+  {
+   "src": "gm_094.jpg",
+   "line": 5,
+   "word": "JENDELANYA",
+   "move": "tiltUp",
+   "w": 1584,
+   "h": 2112
+  },
+  {
+   "src": "gm_020.jpg",
+   "line": 5,
+   "word": "REBAHAN",
+   "move": "zoomIn",
+   "w": 2816,
+   "h": 2112
+  },
+  {
+   "src": "gm_153.jpg",
+   "line": 6,
+   "move": "panR",
+   "w": 2816,
+   "h": 2112
+  },
+  {
+   "src": "gm_199.jpg",
+   "line": 6,
+   "word": "JERNIH",
+   "move": "panL",
+   "w": 2816,
+   "h": 2112
+  },
+  {
+   "src": "gm_063.jpg",
+   "line": 7,
+   "move": "panR",
+   "w": 2816,
+   "h": 2112
+  },
+  {
+   "src": "gm_141.jpg",
+   "line": 7,
+   "word": "SARAPAN",
+   "move": "tiltUp",
+   "w": 1584,
+   "h": 2112
+  },
+  {
+   "src": "gm_091.jpg",
+   "line": 7,
+   "word": "MENUNYA",
+   "move": "zoomIn",
+   "w": 3168,
+   "h": 2112
+  },
+  {
+   "src": "gm_132.jpg",
+   "line": 8,
+   "move": "panR",
+   "w": 3168,
+   "h": 2112
+  },
+  {
+   "src": "gm_152.jpg",
+   "line": 8,
+   "word": "RUANG",
+   "move": "zoomIn",
+   "w": 3168,
+   "h": 2112
+  },
+  {
+   "src": "gm_247.jpg",
+   "line": 9,
+   "move": "drift",
+   "w": 1584,
+   "h": 2112
+  },
+  {
+   "src": "gm_204.jpg",
+   "line": 10,
+   "move": "panR",
+   "w": 3168,
+   "h": 2112
+  },
+  {
+   "src": "gm_034.jpg",
+   "line": 10,
+   "word": "PILIH",
+   "move": "panL",
+   "w": 2816,
+   "h": 2112
+  },
+  {
+   "src": "gm_121.jpg",
+   "line": 10,
+   "word": "BAYAR",
+   "move": "zoomIn",
+   "w": 2816,
+   "h": 2112
+  },
+  {
+   "src": "gm_056.jpg",
+   "line": 11,
+   "move": "tiltUp",
+   "w": 1188,
+   "h": 2113
+  },
+  {
+   "src": "gm_057.jpg",
+   "line": 11,
+   "word": "SIAP",
+   "move": "zoomIn",
+   "w": 2816,
+   "h": 2112
+  },
+  {
+   "src": "gm_086.jpg",
+   "line": 12,
+   "move": "panR",
+   "w": 2805,
+   "h": 2112
+  },
+  {
+   "src": "gm_175.jpg",
+   "line": 12,
+   "word": "SEKARANG",
+   "move": "zoomOut",
+   "w": 1584,
+   "h": 2112
+  }
+ ]
+}

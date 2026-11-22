@@ -1,0 +1,31 @@
+{
+  "voiceId": "iWydkXKoiVtvdn4vLKp9",
+  "modelId": "eleven_multilingual_v2",
+  "language": "id",
+  "voiceSettings": {
+    "stability": 0.4,
+    "similarity_boost": 0.8,
+    "style": 0.35,
+    "speed": 1.2,
+    "use_speaker_boost": true
+  },
+  "overlap": 0.3,
+  "replace": {
+    "seratus ribuan": "100 RIBUAN"
+  },
+  "lines": [
+    "Apartemen di Jember ini bisa disewa harian,",
+    "dan sewa per malamnya cuman seratus ribuan aja.",
+    "So yes, ini dia apartemen Jember Town Square.",
+    "Banyak banget pilihan, kamu tinggal pilih aja mau nginep di tipe kamar yang mana,",
+    "dan rate per malamnya beneran cuma seratus ribuan aja.",
+    "Tenang, fasilitasnya tuh udah lengkap.",
+    "Dan cara pesannya tuh gampang banget.",
+    "Kamu tinggal klik lokasi hijau yang ada di pojok kiri bawah,",
+    "pilih tanggal menginap dan tipe kamar,",
+    "lanjutkan sampai pembayaran, selesai.",
+    "Dan pas hari H, kamu tinggal datang aja ke apartemennya,",
+    "dan bilang aja kalau udah pesan dari TikTok.",
+    "So, tunggu apalagi? Pesan sekarang juga di tag lokasi!"
+  ]
+}

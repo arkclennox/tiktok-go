@@ -1,0 +1,22 @@
+{
+  "voiceId": "iWydkXKoiVtvdn4vLKp9",
+  "modelId": "eleven_multilingual_v2",
+  "language": "id",
+  "voiceSettings": { "stability": 0.4, "similarity_boost": 0.8, "style": 0.35, "speed": 1.2, "use_speaker_boost": true },
+  "overlap": 0.3,
+  "replace": { "satu juta seratus ribuan": "1 JUTA 100 RIBUAN", "bintang lima": "BINTANG 5", "jam tiga": "JAM 3", "de trans laksyuri": "THE TRANS LUXURY" },
+  "lines": [
+    "Lagi suntuk sama Surabaya yang panas? Coba kabur sebentar ke tempat ini.",
+    "Hotel bintang lima, semalam mulai satu juta seratus ribuan.",
+    "Namanya De Trans Laksyuri, letaknya di Jalan Ahmad Yani.",
+    "Pintu kamar dibuka, langsung disambut jendela besar dan kasur yang empuk.",
+    "Malam hari, lampu kota kelihatan jelas dari balik kaca.",
+    "Kolam renangnya ada di ketinggian, berenang sambil lihat gedung-gedung.",
+    "Lapar? Naik saja ke restoran di atap, makan sambil menikmati pemandangan.",
+    "Kamar mandinya juga lega dan bersih.",
+    "Mau menginap di sini gampang.",
+    "Sentuh tanda lokasi di bawah, tentukan tanggal dan kamar, lalu bayar.",
+    "Kamar siap mulai jam tiga sore.",
+    "Sekali-kali manjain diri sendiri, kamu pantas kok."
+  ]
+}

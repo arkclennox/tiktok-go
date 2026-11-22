@@ -1,0 +1,22 @@
+{
+  "voiceId": "iWydkXKoiVtvdn4vLKp9",
+  "modelId": "eleven_multilingual_v2",
+  "language": "id",
+  "voiceSettings": { "stability": 0.4, "similarity_boost": 0.8, "style": 0.35, "speed": 1.2, "use_speaker_boost": true },
+  "overlap": 0.3,
+  "replace": { "seratus empat puluh ribuan": "140 RIBUAN", "je ce": "JC" },
+  "lines": [
+    "Penginapan di Jember ini murah banget,",
+    "semalam cuma seratus empat puluh ribuan aja.",
+    "So yes, ini dia Je Ce Hotel di Jalan Sunan Drajat.",
+    "Kamarnya bersih dan nyaman, mau kasur besar atau dua kasur terpisah juga ada,",
+    "dan harganya beneran cuma seratus empat puluh ribuan aja.",
+    "Tenang, fasilitasnya lengkap, ada wifi gratis, parkir gratis,",
+    "plus ada kafe dan sarapan juga.",
+    "Cara pesannya juga gampang banget.",
+    "Kamu tinggal klik lokasi hijau yang ada di pojok kiri bawah,",
+    "pilih tanggal menginap dan tipe kamar, lanjutkan sampai pembayaran, selesai.",
+    "Pas hari H, tinggal datang aja, masuk kamar mulai jam dua siang.",
+    "So, tunggu apalagi? Pesan sekarang juga di tag lokasi."
+  ]
+}
