@@ -6,8 +6,8 @@ Skill agen untuk membuat **video promo penginapan gaya "tag lokasi" TikTok** —
 
 ## What it makes
 
-- Real photos of the property (from its Google Maps gallery, full resolution) with handheld-style camera moves
-- Typewriter title, TikTok-style price card, 2–3-word captions with the spoken word highlighted
+- Real photos of the property (from its Google Maps gallery, full resolution)
+- An edit language that must change every video (enforced by `lint.py`): 15 transitions (whip, flash, light leak, zoom-through, spin, push, gravity drop, iris, slice, RGB glitch…), 11 camera moves (speed ramp, crash zoom, 3D dolly, measured handheld shake…), split / grid / polaroid layouts, 6 kinetic caption styles, word hits, title and price styles, colour looks and CC0 sound effects — vocabulary and the external sources behind it in [`references/gaya.md`](references/gaya.md)
 - Voice-over where each sentence starts 0.3 s before the previous one ends (the fast "stacked" TikTok delivery)
 - Rendered with [Remotion](https://www.remotion.dev/)
 
@@ -27,8 +27,8 @@ Without provider timestamps, word timings come from `whisper-cli` (whisper.cpp) 
 
 ## Built-in checks (before anything is rendered)
 
-- `lint.py` — banned English loanwords (TTS mispronounces them), script too similar to earlier videos, shots too short/long, photos that would be upscaled, title too wide, missing property name, invalid price format…
-- `cek.mjs` — renders every shot at the start, middle and end of its camera move into contact sheets so the agent inspects watermarks, wrong crops, faces, misread signage and caption overlap before the full render.
+- `lint.py` — banned English loanwords (TTS mispronounces them), script too similar to earlier videos, an edit plan that repeats itself or the previous video, shots too short/long, photos that would be upscaled, title too wide, missing property name, invalid price format…
+- `cek.mjs` — renders every shot at the start, middle and end of its camera move, plus the middle of every transition, layout entrance and word hit, into contact sheets so the agent inspects watermarks, wrong crops, faces, misread signage and caption overlap before the full render.
 - `references/pelajaran.md` — a lessons log the agent must read first and append to after every correction, so mistakes are not repeated.
 
 ## Setup

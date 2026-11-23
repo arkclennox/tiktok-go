@@ -1,0 +1,308 @@
+{
+ "nama": "Grand Malioboro Hotel Yogyakarta",
+ "bahan": "../bahan-gmaps",
+ "title": [
+  "Ke Jogja",
+  "berdua?"
+ ],
+ "card": {
+  "photo": "gm_061.jpg",
+  "badge": "Hemat",
+  "name": "Kamar Deluxe",
+  "chips": [
+   "Hingga 2 tamu",
+   "Wi-Fi gratis"
+  ],
+  "notes": [
+   [
+    "green",
+    "Wi-Fi gratis"
+   ],
+   [
+    "green",
+    "Parkir gratis"
+   ],
+   [
+    "muted",
+    "Check-in 14.00"
+   ]
+  ],
+  "price": "349.600",
+  "priceNote": "per malam",
+  "button": "Pesan",
+  "from": [
+   2,
+   "350"
+  ],
+  "toLineEnd": 3,
+  "countLabel": "MULAI",
+  "stub": "BERDUA"
+ },
+ "shots": [
+  {
+   "src": "gm_098.jpg",
+   "line": 1,
+   "move": "ramp",
+   "in": "cut"
+  },
+  {
+   "src": "gm_001.jpg",
+   "line": 2,
+   "move": "zoomIn",
+   "in": "flash",
+   "layout": "frame",
+   "label": "Grand Malioboro"
+  },
+  {
+   "src": "gm_023.jpg",
+   "line": 2,
+   "move": "zoomOut",
+   "in": "zoom",
+   "word": "350"
+  },
+  {
+   "src": "gm_004.jpg",
+   "line": 3,
+   "move": "panR",
+   "in": "leak"
+  },
+  {
+   "src": "gm_017.jpg",
+   "line": 3,
+   "move": "drift",
+   "in": "push",
+   "word": "DI",
+   "layout": "split2",
+   "extra": [
+    "gm_032.jpg"
+   ]
+  },
+  {
+   "src": "gm_080.jpg",
+   "line": 4,
+   "move": "tiltUp",
+   "in": "iris"
+  },
+  {
+   "src": "gm_103.jpg",
+   "line": 5,
+   "move": "zoomOut",
+   "in": "dip"
+  },
+  {
+   "src": "gm_059.jpg",
+   "line": 5,
+   "move": "roll",
+   "in": "spin",
+   "word": "TINGGAL"
+  },
+  {
+   "src": "gm_061.jpg",
+   "line": 6,
+   "move": "zoomIn",
+   "in": "whipU"
+  },
+  {
+   "src": "gm_019.jpg",
+   "line": 6,
+   "move": "drift",
+   "in": "drop",
+   "word": "RANJANGNYA",
+   "layout": "frame",
+   "label": "buat berdua"
+  },
+  {
+   "src": "gm_014.jpg",
+   "line": 7,
+   "move": "zoomIn",
+   "in": "glitch",
+   "layout": "split3",
+   "extra": [
+    "gm_015.jpg",
+    "gm_024.jpg"
+   ]
+  },
+  {
+   "src": "gm_082.jpg",
+   "line": 8,
+   "move": "tiltDown",
+   "in": "leak"
+  },
+  {
+   "src": "gm_026.jpg",
+   "line": 8,
+   "move": "panR",
+   "in": "cut",
+   "word": "TAMAN"
+  },
+  {
+   "src": "gm_027.jpg",
+   "line": 9,
+   "move": "zoomOut",
+   "in": "drop",
+   "layout": "grid4",
+   "extra": [
+    "gm_090.jpg",
+    "gm_047.jpg",
+    "gm_124.jpg"
+   ]
+  },
+  {
+   "src": "gm_089.jpg",
+   "line": 10,
+   "move": "dolly3d",
+   "in": "flash"
+  },
+  {
+   "src": "gm_088.jpg",
+   "line": 10,
+   "move": "punch",
+   "in": "whipR",
+   "word": "ENAK",
+   "punch": [
+    10,
+    "BERDUA"
+   ]
+  },
+  {
+   "src": "gm_043.jpg",
+   "line": 11,
+   "move": "zoomOut",
+   "in": "push"
+  },
+  {
+   "src": "gm_012.jpg",
+   "line": 11,
+   "move": "tiltUp",
+   "in": "zoom",
+   "word": "KELUAR"
+  },
+  {
+   "src": "gm_072.jpg",
+   "line": 12,
+   "move": "roll",
+   "in": "leak"
+  },
+  {
+   "src": "gm_002.jpg",
+   "line": 12,
+   "move": "zoomIn",
+   "in": "whipL",
+   "word": "AJAK"
+  }
+ ],
+ "titleStyle": "note",
+ "priceStyle": "ticket",
+ "look": {
+  "name": "film-berdua",
+  "grade": "film",
+  "grain": 0.06,
+  "vignette": 0.35,
+  "accent": "#FE8F1E",
+  "shake": 0.15
+ },
+ "emph": [
+  "JOGJA",
+  "BERDUA",
+  "350",
+  "BINTANG",
+  "3",
+  "MALIOBORO",
+  "6",
+  "MENIT",
+  "MALAM",
+  "KAMAR",
+  "LEBAR",
+  "BIRU",
+  "TAMAN",
+  "HIJAU",
+  "LENGKAP",
+  "BUAH",
+  "LUAS",
+  "FOTO",
+  "DIA"
+ ],
+ "hits": [
+  {
+   "line": 2,
+   "word": "350",
+   "fx": "flash"
+  },
+  {
+   "line": 4,
+   "word": "6",
+   "fx": "pulse"
+  },
+  {
+   "line": 7,
+   "word": "BIRU",
+   "fx": "zoom"
+  },
+  {
+   "line": 10,
+   "word": "FOTO",
+   "fx": "shake"
+  }
+ ],
+ "captions": [
+  {
+   "line": 1,
+   "style": "emph",
+   "y": 1650
+  },
+  {
+   "line": 2,
+   "style": "box",
+   "y": 1640
+  },
+  {
+   "line": 3,
+   "style": "note"
+  },
+  {
+   "line": 4,
+   "style": "stack"
+  },
+  {
+   "line": 5,
+   "style": "typeon"
+  },
+  {
+   "line": 6,
+   "style": "note"
+  },
+  {
+   "line": 7,
+   "style": "slam"
+  },
+  {
+   "line": 8,
+   "style": "emph"
+  },
+  {
+   "line": 9,
+   "style": "box"
+  },
+  {
+   "line": 10,
+   "style": "note"
+  },
+  {
+   "line": 11,
+   "style": "typeon"
+  },
+  {
+   "line": 12,
+   "style": "note"
+  }
+ ],
+ "music": {
+  "file": "musik/summer-guitar-hip-hop-beat.mp3",
+  "volume": 0.13
+ },
+ "cta": {
+  "line": 12,
+  "word": "LOKASI"
+ },
+ "titleY": 1180
+}

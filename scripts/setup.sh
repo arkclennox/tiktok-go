@@ -6,6 +6,8 @@ K="$(cd "$(dirname "$0")/.." && pwd)"
 mkdir -p "$K/template/public/fonts"
 F="$K/template/public/fonts/Montserrat.ttf"
 [ -f "$F" ] || curl -fsSL "https://github.com/google/fonts/raw/main/ofl/montserrat/Montserrat%5Bwght%5D.ttf" -o "$F"
+F2="$K/template/public/fonts/Caveat.ttf"   # tulisan tangan untuk gaya note/ticket (SIL OFL 1.1)
+[ -f "$F2" ] || curl -fsSL "https://github.com/google/fonts/raw/main/ofl/caveat/Caveat%5Bwght%5D.ttf" -o "$F2"
 mkdir -p "$HOME/.config/tiktok-go"
 [ -f "$HOME/.config/tiktok-go/config.json" ] || cat > "$HOME/.config/tiktok-go/config.json" <<'JSON'
 {

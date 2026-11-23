@@ -1,0 +1,37 @@
+{
+ "tts": {
+  "provider": "elevenlabs",
+  "voiceId": "iWydkXKoiVtvdn4vLKp9",
+  "modelId": "eleven_multilingual_v2",
+  "voiceSettings": {
+   "stability": 0.4,
+   "similarity_boost": 0.8,
+   "style": 0.35,
+   "speed": 1.2,
+   "use_speaker_boost": true
+  }
+ },
+ "language": "id",
+ "overlap": 0.3,
+ "replace": {
+  "tiga ratus lima puluh ribuan": "350 RIBUAN",
+  "bintang tiga": "BINTANG 3",
+  "enam menit": "6 MENIT",
+  "jam dua siang": "JAM 2 SIANG",
+  "jam dua belas": "JAM 12"
+ },
+ "lines": [
+  "Ke Jogja berdua? Nginepnya di sini aja.",
+  "Grand Malioboro Hotel, mulai tiga ratus lima puluh ribuan semalam.",
+  "Itu harga buat berdua, di hotel bintang tiga.",
+  "Malioboro cuma enam menit jalan kaki dari sini.",
+  "Pulang jajan malam, tinggal jalan balik ke kamar.",
+  "Kamarnya terang dan rapi, ranjangnya lebar buat berdua.",
+  "Ada juga kamar dengan lantai tegel biru bermotif.",
+  "Paginya, sarapan di taman tengah yang hijau.",
+  "Prasmanannya lengkap, dari nasi sampai buah.",
+  "Lobinya luas dan terang, enak buat foto berdua.",
+  "Masuk kamar jam dua siang, keluar jam dua belas.",
+  "Simpan dulu videonya, lalu ajak dia ke tag lokasi ini."
+ ]
+}

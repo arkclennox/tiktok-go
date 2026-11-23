@@ -19,6 +19,7 @@ const serveUrl = await bundle({ entryPoint: path.resolve("src/index.ts") });
 const composition = await selectComposition({ serveUrl, id: "Promo", browserExecutable });
 let last = -1;
 await renderMedia({ composition, serveUrl, codec: "h264", crf: 16, imageFormat: "jpeg", jpegQuality: 100, audioCodec: "aac", audioBitrate: "256k",
-  outputLocation: out, browserExecutable, concurrency: 3, timeoutInMilliseconds: 240000,
+  outputLocation: out, browserExecutable, concurrency: Number(process.env.RENDER_CONC || 3), // RENDER_CONC=1 kalau memori sempit
+  timeoutInMilliseconds: 240000,
   onProgress: ({ progress }) => { const p = Math.floor(progress * 10); if (p !== last) { last = p; console.log(`${p * 10}%`); } } });
 console.log("done", out);

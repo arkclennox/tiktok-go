@@ -1,0 +1,344 @@
+{
+ "nama": "Jambuluwuk Convention Hall & Resort Batu",
+ "bahan": "../bahan-gmaps",
+ "title": [
+  "Jambuluwuk",
+  "Resort Batu"
+ ],
+ "card": {
+  "photo": "gm_029.jpg",
+  "badge": "Terlaris",
+  "name": "Deluxe Room",
+  "chips": [
+   "Hingga 2 tamu",
+   "Wi-Fi gratis"
+  ],
+  "notes": [
+   [
+    "green",
+    "Kolam renang"
+   ],
+   [
+    "green",
+    "Parkir gratis"
+   ],
+   [
+    "muted",
+    "Check-in 14.00"
+   ]
+  ],
+  "price": "530.282",
+  "priceNote": "per malam",
+  "button": "Pesan",
+  "from": [
+   10,
+   "530"
+  ],
+  "toLineEnd": 10,
+  "countLabel": "MULAI"
+ },
+ "shots": [
+  {
+   "src": "gm_044.jpg",
+   "line": 1,
+   "move": "ramp",
+   "in": "cut"
+  },
+  {
+   "src": "gm_143.jpg",
+   "line": 1,
+   "word": "CUKUP",
+   "move": "punch",
+   "in": "whipL",
+   "punch": [
+    1,
+    "TEMPAT"
+   ]
+  },
+  {
+   "src": "gm_013.jpg",
+   "line": 2,
+   "move": "dolly3d",
+   "in": "flash"
+  },
+  {
+   "src": "gm_020.jpg",
+   "line": 2,
+   "word": "RESORT",
+   "move": "zoomOut",
+   "in": "zoom"
+  },
+  {
+   "src": "gm_130.jpg",
+   "line": 3,
+   "move": "tiltDown",
+   "in": "iris"
+  },
+  {
+   "src": "gm_024.jpg",
+   "line": 3,
+   "word": "JOGJA",
+   "move": "drift",
+   "in": "slice",
+   "layout": "split3",
+   "extra": [
+    "gm_105.jpg",
+    "gm_098.jpg"
+   ]
+  },
+  {
+   "src": "gm_053.jpg",
+   "line": 4,
+   "move": "zoomIn",
+   "in": "whipU"
+  },
+  {
+   "src": "gm_154.jpg",
+   "line": 4,
+   "word": "BELAKANGNYA",
+   "move": "panR",
+   "in": "push"
+  },
+  {
+   "src": "gm_086.jpg",
+   "line": 5,
+   "move": "roll",
+   "in": "leak",
+   "layout": "split2",
+   "extra": [
+    "gm_069.jpg"
+   ]
+  },
+  {
+   "src": "gm_063.jpg",
+   "line": 5,
+   "word": "BIRU",
+   "move": "panL",
+   "in": "cut"
+  },
+  {
+   "src": "gm_155.jpg",
+   "line": 6,
+   "move": "zoomIn",
+   "in": "drop",
+   "layout": "grid4",
+   "extra": [
+    "gm_238.jpg",
+    "gm_198.jpg",
+    "gm_210.jpg"
+   ]
+  },
+  {
+   "src": "gm_191.jpg",
+   "line": 6,
+   "word": "TERSESAT",
+   "move": "dolly3d",
+   "in": "zoom"
+  },
+  {
+   "src": "gm_259.jpg",
+   "line": 6,
+   "word": "LEWAT",
+   "move": "panR",
+   "in": "whipR"
+  },
+  {
+   "src": "gm_123.jpg",
+   "line": 7,
+   "move": "zoomIn",
+   "in": "flash",
+   "layout": "frame",
+   "label": "Adu biliar"
+  },
+  {
+   "src": "gm_109.jpg",
+   "line": 7,
+   "word": "SAMBIL",
+   "move": "zoomOut",
+   "in": "cut"
+  },
+  {
+   "src": "gm_071.jpg",
+   "line": 8,
+   "move": "tiltUp",
+   "in": "leak"
+  },
+  {
+   "src": "gm_146.jpg",
+   "line": 8,
+   "word": "SARAPAN",
+   "move": "punch",
+   "in": "spin",
+   "punch": [
+    8,
+    "SEGAR"
+   ]
+  },
+  {
+   "src": "gm_092.jpg",
+   "line": 9,
+   "move": "tiltDown",
+   "in": "dip"
+  },
+  {
+   "src": "gm_230.jpg",
+   "line": 9,
+   "word": "LAMPU",
+   "move": "drift",
+   "in": "slice"
+  },
+  {
+   "src": "gm_029.jpg",
+   "line": 10,
+   "move": "zoomIn",
+   "in": "zoom"
+  },
+  {
+   "src": "gm_049.jpg",
+   "line": 10,
+   "word": "KAMAR",
+   "move": "panL",
+   "in": "cut"
+  },
+  {
+   "src": "gm_047.jpg",
+   "line": 11,
+   "move": "roll",
+   "in": "glitch"
+  },
+  {
+   "src": "gm_260.jpg",
+   "line": 11,
+   "word": "LOKASINYA",
+   "move": "panR",
+   "in": "whipL"
+  },
+  {
+   "src": "gm_116.jpg",
+   "line": 12,
+   "move": "dolly3d",
+   "in": "push"
+  },
+  {
+   "src": "gm_135.jpg",
+   "line": 12,
+   "word": "PAMER",
+   "move": "zoomOut",
+   "in": "spin"
+  }
+ ],
+ "titleStyle": "mask",
+ "priceStyle": "count",
+ "look": {
+  "name": "brand-keluarga",
+  "grade": "warm",
+  "grain": 0.05,
+  "vignette": 0.3,
+  "accent": "#FE8F1E",
+  "shake": 0.18
+ },
+ "emph": [
+  "ANAK",
+  "BATU",
+  "JAMBULUWUK",
+  "JOGJA",
+  "SOLO",
+  "MADURA",
+  "GADANG",
+  "GUNUNG",
+  "DUA",
+  "BIRU",
+  "LABIRIN",
+  "AYAHNYA",
+  "BILIAR",
+  "CAPEK",
+  "SARAPAN",
+  "SEGAR",
+  "LAMPU",
+  "HANGAT",
+  "530",
+  "PAMER"
+ ],
+ "hits": [
+  {
+   "line": 2,
+   "word": "5",
+   "fx": "pulse"
+  },
+  {
+   "line": 5,
+   "word": "DUA",
+   "fx": "zoom"
+  },
+  {
+   "line": 7,
+   "word": "CAPEK",
+   "fx": "shake"
+  },
+  {
+   "line": 10,
+   "word": "530",
+   "fx": "flash"
+  }
+ ],
+ "captions": [
+  {
+   "line": 1,
+   "style": "emph"
+  },
+  {
+   "line": 2,
+   "style": "box",
+   "y": 1640
+  },
+  {
+   "line": 3,
+   "style": "typeon"
+  },
+  {
+   "line": 4,
+   "style": "slam"
+  },
+  {
+   "line": 5,
+   "style": "stack"
+  },
+  {
+   "line": 6,
+   "style": "slam"
+  },
+  {
+   "line": 7,
+   "style": "emph"
+  },
+  {
+   "line": 8,
+   "style": "karaoke"
+  },
+  {
+   "line": 9,
+   "style": "typeon"
+  },
+  {
+   "line": 10,
+   "style": "karaoke"
+  },
+  {
+   "line": 11,
+   "style": "typeon",
+   "y": 1500
+  },
+  {
+   "line": 12,
+   "style": "emph"
+  }
+ ],
+ "music": {
+  "file": "musik/blue-sky.mp3",
+  "volume": 0.13
+ },
+ "cta": {
+  "line": 11,
+  "word": "SENTUH"
+ }
+}

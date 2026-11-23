@@ -1,0 +1,154 @@
+{
+ "nama": "(gaya klasik video 1-4)",
+ "titleStyle": "type",
+ "priceStyle": "card",
+ "look": {
+  "name": "klasik",
+  "accent": "#FF9A1F",
+  "grade": "none"
+ },
+ "shots": [
+  {
+   "move": "tiltUp",
+   "in": "cut"
+  },
+  {
+   "move": "zoomIn",
+   "in": "cut"
+  },
+  {
+   "move": "zoomIn",
+   "in": "cut"
+  },
+  {
+   "move": "zoomIn",
+   "in": "cut"
+  },
+  {
+   "move": "zoomIn",
+   "in": "cut"
+  },
+  {
+   "move": "zoomIn",
+   "in": "cut"
+  },
+  {
+   "move": "zoomIn",
+   "in": "cut"
+  },
+  {
+   "move": "zoomIn",
+   "in": "cut"
+  },
+  {
+   "move": "zoomIn",
+   "in": "cut"
+  },
+  {
+   "move": "zoomIn",
+   "in": "cut"
+  },
+  {
+   "move": "zoomIn",
+   "in": "cut"
+  },
+  {
+   "move": "zoomIn",
+   "in": "cut"
+  },
+  {
+   "move": "zoomIn",
+   "in": "cut"
+  },
+  {
+   "move": "zoomIn",
+   "in": "cut"
+  },
+  {
+   "move": "zoomIn",
+   "in": "cut"
+  },
+  {
+   "move": "zoomIn",
+   "in": "cut"
+  },
+  {
+   "move": "zoomIn",
+   "in": "cut"
+  },
+  {
+   "move": "zoomIn",
+   "in": "cut"
+  },
+  {
+   "move": "zoomIn",
+   "in": "cut"
+  },
+  {
+   "move": "zoomIn",
+   "in": "cut"
+  },
+  {
+   "move": "zoomIn",
+   "in": "cut"
+  },
+  {
+   "move": "zoomIn",
+   "in": "cut"
+  },
+  {
+   "move": "zoomIn",
+   "in": "cut"
+  }
+ ],
+ "captions": [
+  {
+   "line": 1,
+   "style": "karaoke"
+  },
+  {
+   "line": 2,
+   "style": "karaoke"
+  },
+  {
+   "line": 3,
+   "style": "karaoke"
+  },
+  {
+   "line": 4,
+   "style": "karaoke"
+  },
+  {
+   "line": 5,
+   "style": "karaoke"
+  },
+  {
+   "line": 6,
+   "style": "karaoke"
+  },
+  {
+   "line": 7,
+   "style": "karaoke"
+  },
+  {
+   "line": 8,
+   "style": "karaoke"
+  },
+  {
+   "line": 9,
+   "style": "karaoke"
+  },
+  {
+   "line": 10,
+   "style": "karaoke"
+  },
+  {
+   "line": 11,
+   "style": "karaoke"
+  },
+  {
+   "line": 12,
+   "style": "karaoke"
+  }
+ ]
+}

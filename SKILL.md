@@ -1,12 +1,12 @@
 ---
 name: tiktok-go
-description: Membuat video promo penginapan (hotel, homestay, apartemen harian, villa) gaya TikTok "tag lokasi" — vertikal 1080x1920 ±35–42 detik, foto asli dari Google Maps dengan gerak kamera genggam, judul diketik, kartu harga ala TikTok, caption 2–3 kata dengan kata aktif oranye, dan VO bahasa Indonesia yang kalimatnya saling tumpang 0,3 detik — suara dari ElevenLabs, OpenAI/API kompatibel, VoiceStudio lokal, perintah TTS apa pun, atau rekaman sendiri (Remotion). Pakai setiap kali pemilik menyebut tiktok-go atau minta "video promo hotel/homestay/penginapan/apartemen", "bikin untuk hotel lain", "video tag lokasi", atau perbaikan video jenis ini (~/rea-video-out/*/promo).
+description: Membuat video promo penginapan (hotel, homestay, apartemen harian, villa) gaya TikTok "tag lokasi" — vertikal 1080x1920 ±35–42 detik, foto asli dari Google Maps dengan bahasa edit yang selalu bervariasi (15 transisi, speed ramp/crash zoom/3D, kolase & polaroid, 6 gaya caption kinetik, hentakan + SFX, kartu/hitungan harga), dan VO bahasa Indonesia yang kalimatnya saling tumpang 0,3 detik — suara dari ElevenLabs, OpenAI/API kompatibel, VoiceStudio lokal, perintah TTS apa pun, atau rekaman sendiri (Remotion). Pakai setiap kali pemilik menyebut tiktok-go atau minta "video promo hotel/homestay/penginapan/apartemen", "bikin untuk hotel lain", "video tag lokasi", atau perbaikan video jenis ini (~/rea-video-out/*/promo).
 ---
 
 # tiktok-go — promo penginapan gaya tag lokasi TikTok
 
 Bicara ke pemilik dalam **Bahasa Indonesia, singkat** (1–3 kalimat). Video juga berbahasa Indonesia.
-`template/` = proyek Aston Jember lengkap yang disetujui ("cukup bagus"). Gaya visual TETAP; isi (foto, naskah, kartu) selalu baru.
+`template/` = proyek lengkap (contoh plan.json = Jambuluwuk Batu, bahasa edit v2). Isi DAN kombinasi gaya selalu baru tiap video.
 
 ## Belajar terus (WAJIB — aturan pemilik)
 
@@ -14,7 +14,7 @@ Bicara ke pemilik dalam **Bahasa Indonesia, singkat** (1–3 kalimat). Video jug
 2. **Setiap kali pemilik mengoreksi, atau kamu sendiri menemukan kesalahan** (di cek-shot, render gagal, dll.): saat itu juga tambahkan
    satu entri di `references/pelajaran.md` (format ada di file). Jika bisa dicek mesin, tambahkan juga ke `template/lint.py`
    atau `template/cek.mjs` — aturan yang hanya tertulis akan terulang.
-3. **Setelah video selesai:** salin `script.json` ke `references/naskah/NN-nama.json`, tambah baris di `references/riwayat.md`
+3. **Setelah video selesai:** salin `script.json` ke `references/naskah/NN-nama.json` dan `plan.json` ke `references/plan/NN-nama.json`, tambah baris di `references/riwayat.md`
    (tema, pembuka, CTA, path hasil, masukan pemilik). Masukan pemilik yang datang belakangan ditambahkan ke baris itu.
 4. Jangan mengulang kesalahan yang sudah tercatat. Kalau terpaksa melanggar aturan, katakan ke pemilik alasannya.
 
@@ -33,8 +33,8 @@ Proyek baru: `~/rea-video-out/<slug>/` (atau folder yang diminta pemilik) berisi
 4. **Naskah** `script.json` (11–13 baris, 33–42 detik): naskah BARU, bukan isian ulang naskah lama. Bedakan sudut/tema, kalimat pembuka,
    urutan, dan CTA dari semua video di riwayat. Bahasa lisan santai, tanpa kata Inggris, angka ditulis huruf + `replace` untuk tampilan.
    Hanya fakta yang terlihat di Google Maps/foto; jangan mengarang ("cepat penuh", fasilitas yang tidak terlihat). Kartu harga = angka nyata.
-5. **Rencana shot** `plan.json`: `"nama"` = nama penginapan (jadi nama file video), judul 2 baris (≤16 huruf/baris), kartu (`from` = kata harga di baris 2, `toLineEnd` 3), shot per baris
-   + shot di kata pemicu (`word` = kata TAMPIL, huruf besar, tanpa tanda baca). 1 shot ≈ 1,2–3,5 detik, ~2 shot per baris, gerak bergantian.
+5. **Rencana shot** `plan.json` (kosakata gaya: `references/gaya.md`): `"nama"` = nama penginapan (jadi nama file video), judul 2 baris (≤16 huruf/baris), kartu (`from` = kata harga di baris 2, `toLineEnd` 3), shot per baris
+   + shot di kata pemicu (`word` = kata TAMPIL, huruf besar, tanpa tanda baca). 1 shot ≈ 1,0–3,5 detik, ~2 shot per baris. Foto mendatar bagus → split2/split3 (tak perlu dipotong tegak).
    Foto harus cocok dengan kata yang sedang diucapkan (kata "kolam renang" → foto kolam).
 6. `uv run --with pillow python -I lint.py` → semua SALAH diperbaiki.
 7. **Suara:** pilih penyedia di `script.json` → `"tts"` (lihat `references/tts.md`): elevenlabs (default), openai/kompatibel, voicestudio,
@@ -58,13 +58,19 @@ Proyek baru: `~/rea-video-out/<slug>/` (atau folder yang diminta pemilik) berisi
 - **Orang:** tidak ada wajah tamu/anak yang jelas sebagai fokus; tidak ada kerumunan acara (seminar, pernikahan) kecuali naskah membahasnya.
 - **Tata letak:** judul tidak menyentuh tepi (beri jarak ≥40 px); caption tidak menutupi objek penting; kartu harga tidak menutupi
   satu-satunya objek penting di bagian atas; caption sesuai suara (angka/singkatan tampil benar: 400 RIBUAN, JC).
+- **Transisi & efek (frame t1/t2/l/p/92-hit):** tidak ada layar hitam/kosong yang tak disengaja, kata slam tidak terpotong, kartu polaroid & kolase utuh, kilat tidak menutupi kata harga.
 - **Urutan & ritme:** tidak ada dua foto mirip berurutan; tidak ada shot <0,8 s atau >4,5 s (cek.mjs memberi peringatan).
 
-## Gaya yang dikunci (jangan diubah tanpa diminta)
+## Gaya visual: bahasa edit v2 (aturan pemilik 2026-11-23 — DILARANG monoton)
 
-Montserrat; judul 700 96 px putih bayangan gelap, diketik 26 huruf/detik, top 470, sampai akhir baris 1. Caption 800 58 px huruf besar,
-letterSpacing 4, stroke hitam 10 px, kata aktif #FF9A1F, top 1430, potongan ≤3 kata/≤19 huruf. Kartu putih ala TikTok (badge merah,
-harga, tombol merah "Pesan") pop-in spring. Foto cover ×1.1 + gerak zoomIn/zoomOut/panR/panL/tiltUp/drift + goyang tangan halus.
+Baca `references/gaya.md` (kosakata + sumber luar). Tiap video memilih sendiri, per shot/baris di `plan.json`: transisi (`in`),
+gerak (`move`), tata letak (`layout` + `extra`), gaya caption per baris (`captions`), kata aksen (`emph`), hentakan (`hits`),
+`titleStyle`, `priceStyle`, dan `look` (grade, grain, vignette, warna aksen). `lint.py` menolak rencana yang kurang bervariasi atau
+mirip video sebelumnya (`references/plan/*.json`). Butuh gaya baru? Cari acuan luar dulu (artikel terbaru, video viral dibedah per frame,
+`npx hyperframes catalog --query ...`), tulis di gaya.md, bangun di `src/Promo.tsx`, tambah ke daftar di lint.py — jangan mengandalkan ingatan.
+Font Montserrat. Warna = brand akun pemilik (`~/.config/tiktok-go/config.json` "brand", lokal). Musik latar WAJIB + efek suara otomatis dari `~/sfx` (CC0).
+**Bebas mengunduh apa pun yang dibutuhkan** (aturan pemilik): musik/SFX CC0 baru (`python3 ~/sfx/tools/fs.py`), ikon, foto resmi/OTA — jangan membatasi diri pada yang sudah ada.
+**Caption tidak boleh terpotong:** periksa `out/cek-shot-cap*.jpg` dan, setelah render, lembar 4–8 fps area caption dari MP4.
 VO: per kalimat, kalimat berikutnya mulai 0,3 s sebelum kalimat sekarang selesai, loudnorm −14 LUFS. Default ElevenLabs suara Cahaya
 `iWydkXKoiVtvdn4vLKp9`, eleven_multilingual_v2, id, stability 0.4, similarity 0.8, style 0.35, speed 1.2, dengan previous/next_text.
 
