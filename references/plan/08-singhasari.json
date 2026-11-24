@@ -1,0 +1,269 @@
+{
+ "nama": "The Singhasari Resort",
+ "tier": "mahal",
+ "bahan": "../bahan-gmaps",
+ "title": [
+  "Capek kerja?",
+  "Kabur ke sini"
+ ],
+ "titleStyle": "mask",
+ "priceStyle": "ticket",
+ "card": {
+  "photo": "gm_136.jpg",
+  "badge": "Liburan",
+  "name": "Kamar Deluxe",
+  "chips": [
+   "2 tamu",
+   "Balkon"
+  ],
+  "notes": [],
+  "price": "1.116.096",
+  "priceNote": "per malam",
+  "button": "Pesan",
+  "from": [
+   10,
+   "SEMALAMNYA"
+  ],
+  "toLineEnd": 10,
+  "countLabel": "MULAI",
+  "stub": "BERDUA"
+ },
+ "look": {
+  "name": "serif-senja",
+  "font": "fraunces",
+  "grade": "warm",
+  "grain": 0.03,
+  "vignette": 0.28,
+  "shake": 0.12
+ },
+ "emph": [
+  "GUNUNG",
+  "LIMA",
+  "PEROSOTANNYA",
+  "KOLAM",
+  "ATAP",
+  "TENGGELAM",
+  "SAUNA",
+  "NYALA",
+  "HIJAU",
+  "ANAK",
+  "BERDUA",
+  "SEJUTA"
+ ],
+ "hits": [
+  {
+   "line": 3,
+   "word": "BANGET",
+   "fx": "pulse"
+  },
+  {
+   "line": 5,
+   "word": "TENGGELAM",
+   "fx": "flash"
+  },
+  {
+   "line": 7,
+   "word": "NYALA",
+   "fx": "zoom"
+  },
+  {
+   "line": 9,
+   "word": "ANAK",
+   "fx": "shake"
+  }
+ ],
+ "captions": [
+  {
+   "line": 1,
+   "style": "typeon"
+  },
+  {
+   "line": 2,
+   "style": "box"
+  },
+  {
+   "line": 3,
+   "style": "emph"
+  },
+  {
+   "line": 4,
+   "style": "note"
+  },
+  {
+   "line": 5,
+   "style": "karaoke"
+  },
+  {
+   "line": 6,
+   "style": "note"
+  },
+  {
+   "line": 7,
+   "style": "emph"
+  },
+  {
+   "line": 8,
+   "style": "typeon"
+  },
+  {
+   "line": 9,
+   "style": "box"
+  },
+  {
+   "line": 10,
+   "style": "emph"
+  },
+  {
+   "line": 11,
+   "style": "note"
+  }
+ ],
+ "music": {
+  "file": "musik/tropical-shore-cinematic-edm-music.mp3",
+  "volume": 0.13
+ },
+ "cta": {
+  "line": 11,
+  "word": "LOKASINYA"
+ },
+ "shots": [
+  {
+   "src": "gm_061.jpg",
+   "line": 1,
+   "move": "dolly3d",
+   "in": "cut"
+  },
+  {
+   "src": "gm_087.jpg",
+   "line": 1,
+   "move": "zoomOut",
+   "in": "leak",
+   "word": "GUNUNG"
+  },
+  {
+   "src": "gm_077.jpg",
+   "line": 2,
+   "move": "panR",
+   "in": "whipL"
+  },
+  {
+   "src": "gm_065.jpg",
+   "line": 2,
+   "move": "tiltUp",
+   "in": "dip",
+   "word": "BINTANG"
+  },
+  {
+   "src": "gm_184.jpg",
+   "line": 3,
+   "move": "drift",
+   "in": "zoom"
+  },
+  {
+   "src": "gm_058.jpg",
+   "line": 3,
+   "move": "zoomIn",
+   "in": "whipU",
+   "word": "PEROSOTANNYA"
+  },
+  {
+   "src": "gm_136.jpg",
+   "line": 4,
+   "move": "panL",
+   "in": "push"
+  },
+  {
+   "src": "gm_141.jpg",
+   "line": 4,
+   "move": "ramp",
+   "in": "flash",
+   "word": "TINGGAL"
+  },
+  {
+   "src": "gm_157.jpg",
+   "line": 5,
+   "move": "tiltDown",
+   "in": "slice"
+  },
+  {
+   "src": "gm_008.jpg",
+   "line": 5,
+   "move": "zoomIn",
+   "in": "leak",
+   "word": "MATAHARI"
+  },
+  {
+   "src": "gm_175.jpg",
+   "line": 6,
+   "move": "drift",
+   "in": "drop",
+   "layout": "frame",
+   "label": "pijat, lalu sauna"
+  },
+  {
+   "src": "gm_185.jpg",
+   "line": 7,
+   "move": "roll",
+   "in": "iris"
+  },
+  {
+   "src": "gm_190.jpg",
+   "line": 7,
+   "move": "zoomOut",
+   "in": "dip",
+   "word": "TENANG"
+  },
+  {
+   "src": "gm_051.jpg",
+   "line": 8,
+   "move": "panR",
+   "in": "glitch",
+   "layout": "split2",
+   "extra": [
+    "gm_066.jpg"
+   ]
+  },
+  {
+   "src": "gm_033.jpg",
+   "line": 9,
+   "move": "punch",
+   "in": "spin",
+   "layout": "grid4",
+   "extra": [
+    "gm_041.jpg",
+    "gm_011.jpg",
+    "gm_044.jpg"
+   ],
+   "punch": [
+    9,
+    "TENIS"
+   ]
+  },
+  {
+   "src": "gm_107.jpg",
+   "line": 10,
+   "move": "drift",
+   "in": "whipR"
+  },
+  {
+   "src": "gm_155.jpg",
+   "line": 10,
+   "move": "tiltUp",
+   "in": "flash",
+   "word": "SEMALAMNYA"
+  },
+  {
+   "src": "gm_064.jpg",
+   "line": 11,
+   "move": "zoomIn",
+   "in": "push"
+  },
+  {
+   "src": "gm_160.jpg",
+   "line": 11,
+   "move": "zoomOut",
+   "in": "zoom",
+   "word": "TAG"
+  }
+ ]
+}

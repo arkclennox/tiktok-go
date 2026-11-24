@@ -84,7 +84,7 @@ gerak (`move`), tata letak (`layout` + `extra`), gaya caption per baris (`captio
 `titleStyle`, `priceStyle`, dan `look` (grade, grain, vignette, warna aksen). `lint.py` menolak rencana yang kurang bervariasi atau
 mirip video sebelumnya (`references/plan/*.json`). Butuh gaya baru? Cari acuan luar dulu (artikel terbaru, video viral dibedah per frame,
 `npx hyperframes catalog --query ...`), tulis di gaya.md, bangun di `src/Promo.tsx`, tambah ke daftar di lint.py — jangan mengandalkan ingatan.
-Font Montserrat. Warna = brand akun pemilik (`~/.config/tiktok-go/config.json` "brand", lokal). Musik latar WAJIB + efek suara otomatis dari `~/sfx` (CC0).
+Huruf utama = `look.font` (montserrat/anton/archivo/fraunces, beda dari 2 video terakhir). Warna = brand akun pemilik (`~/.config/tiktok-go/config.json` "brand", lokal). Musik latar WAJIB + efek suara otomatis dari `~/sfx` (CC0).
 **Bebas mengunduh apa pun yang dibutuhkan** (aturan pemilik): musik/SFX CC0 baru (`python3 ~/sfx/tools/fs.py`), ikon, foto resmi/OTA — jangan membatasi diri pada yang sudah ada.
 **Caption tidak boleh terpotong:** periksa `out/cek-shot-cap*.jpg` dan, setelah render, lembar 4–8 fps area caption dari MP4.
 VO: per kalimat, kalimat berikutnya mulai 0,3 s sebelum kalimat sekarang selesai, loudnorm −14 LUFS. Default ElevenLabs suara Cahaya

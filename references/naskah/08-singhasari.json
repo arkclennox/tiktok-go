@@ -1,0 +1,33 @@
+{
+ "tts": {
+  "provider": "elevenlabs",
+  "voiceId": "iWydkXKoiVtvdn4vLKp9",
+  "modelId": "eleven_multilingual_v2",
+  "voiceSettings": {
+   "stability": 0.4,
+   "similarity_boost": 0.8,
+   "style": 0.35,
+   "speed": 1.2,
+   "use_speaker_boost": true
+  }
+ },
+ "language": "id",
+ "overlap": 0.3,
+ "replace": {
+  "insinyur sukarno": "IR. SOEKARNO",
+  "de singasari resor": "THE SINGHASARI RESORT"
+ },
+ "lines": [
+  "Lagi capek kerja? Bayangin bangun pagi, langsung disambut gunung kayak gini.",
+  "Ini tuh De Singasari Resor, hotel bintang lima di Jalan Insinyur Sukarno, Batu.",
+  "Kolam renangnya luas banget, perosotannya juga panjang.",
+  "Ada kamar yang terasnya nyambung ke kolam, jadi tinggal turun aja.",
+  "Sore-sore, kamu bisa naik ke bar di atap sambil lihat matahari tenggelam.",
+  "Kalau badan pegal, mampir dulu ke tempat pijatnya, terus lanjut sauna.",
+  "Malamnya kolam ini nyala, tenang banget buat jalan santai.",
+  "Tamannya hijau, dan gunungnya kelihatan dari mana-mana.",
+  "Bawa anak juga bisa, ada taman bermain sampai lapangan tenis.",
+  "Buat liburan berdua, semalamnya mulai sejuta seratus ribuan.",
+  "Libur akhir tahun nanti, kamu nginep di sini ya, lokasinya ada di tag."
+ ]
+}

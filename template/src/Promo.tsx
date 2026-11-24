@@ -133,8 +133,8 @@ const ShotView: React.FC<{ s: Shot; i: number; t: number }> = ({ s, i, t }) => {
   const k = shake(t, i + 3, LOOK.shake * 0.6);
   if (s.layout === "split2" || s.layout === "split3") {
     const n = s.layout === "split2" ? 2 : 3, gap = 12, bh = (FH - gap * (n - 1)) / n;
-    return (
-      <AbsoluteFill style={{ background: "#fff" }}>
+    return ( // latar gelap: panel yang meluncur masuk tidak lagi menyisakan bidang putih besar (Singhasari 2026-11-24)
+      <AbsoluteFill style={{ background: "#0d0d0d" }}>
         {all.slice(0, n).map((ph, j) => {
           const q = eo3((local - j * 0.09) / 0.38), dir = j % 2 ? 1 : -1;
           const pan = interpolate(p, [0, 1], [dir * 30, -dir * 30]);
