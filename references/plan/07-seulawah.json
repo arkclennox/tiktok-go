@@ -1,0 +1,323 @@
+{
+ "nama": "Seulawah Resort & Cafe",
+ "bahan": "../bahan-gmaps",
+ "title": [
+  "Nginep di Batu",
+  "124 ribuan?"
+ ],
+ "card": {
+  "photo": "gm_025.jpg",
+  "badge": "Terlaris",
+  "name": "SEULAWAH RESORT",
+  "chips": [
+   "Hingga 2 tamu",
+   "Wi-Fi gratis"
+  ],
+  "notes": [
+   [
+    "green",
+    "Kolam renang"
+   ],
+   [
+    "green",
+    "Parkir gratis"
+   ],
+   [
+    "muted",
+    "Check-in 14.00"
+   ]
+  ],
+  "price": "123.980",
+  "priceNote": "per malam",
+  "button": "Pesan",
+  "from": [
+   2,
+   "RINCIANNYA"
+  ],
+  "toLineEnd": 2,
+  "countLabel": "MULAI",
+  "receiptNote": "BATU  26-27 NOV  2 TAMU",
+  "items": [
+   [
+    "KAMAR 2 TAMU",
+    "1 MLM"
+   ],
+   [
+    "KOLAM RENANG",
+    "ADA"
+   ],
+   [
+    "WI-FI",
+    "GRATIS"
+   ],
+   [
+    "PARKIR",
+    "GRATIS"
+   ]
+  ],
+  "stamp": "HEMAT"
+ },
+ "shots": [
+  {
+   "src": "gm_026.jpg",
+   "line": 1,
+   "move": "roll",
+   "in": "cut"
+  },
+  {
+   "src": "gm_027.jpg",
+   "line": 1,
+   "move": "zoomIn",
+   "in": "whipR",
+   "word": "KOLAM"
+  },
+  {
+   "src": "gm_044.jpg",
+   "line": 2,
+   "move": "drift",
+   "in": "dip"
+  },
+  {
+   "src": "gm_025.jpg",
+   "line": 2,
+   "word": "KAMAR",
+   "move": "zoomIn",
+   "in": "cut"
+  },
+  {
+   "src": "gm_124.jpg",
+   "line": 3,
+   "move": "zoomOut",
+   "in": "slice"
+  },
+  {
+   "src": "gm_012.jpg",
+   "line": 3,
+   "move": "panL",
+   "in": "push",
+   "word": "JALAN"
+  },
+  {
+   "src": "gm_005.jpg",
+   "line": 4,
+   "move": "panR",
+   "in": "leak"
+  },
+  {
+   "src": "gm_138.jpg",
+   "line": 4,
+   "move": "tiltUp",
+   "in": "iris",
+   "word": "DERETAN"
+  },
+  {
+   "src": "gm_001.jpg",
+   "line": 5,
+   "move": "dolly3d",
+   "in": "zoom"
+  },
+  {
+   "src": "gm_017.jpg",
+   "line": 6,
+   "move": "tiltDown",
+   "in": "flash"
+  },
+  {
+   "src": "gm_068.jpg",
+   "line": 6,
+   "move": "punch",
+   "in": "glitch",
+   "word": "MENYALA",
+   "punch": [
+    6,
+    "KOLAM"
+   ]
+  },
+  {
+   "src": "gm_004.jpg",
+   "line": 7,
+   "move": "zoomIn",
+   "in": "whipU"
+  },
+  {
+   "src": "gm_073.jpg",
+   "line": 7,
+   "move": "drift",
+   "in": "drop",
+   "word": "RANJANGNYA",
+   "layout": "frame",
+   "label": "putih dan rapi"
+  },
+  {
+   "src": "gm_039.jpg",
+   "line": 8,
+   "move": "zoomOut",
+   "in": "leak"
+  },
+  {
+   "src": "gm_014.jpg",
+   "line": 8,
+   "move": "tiltUp",
+   "in": "spin",
+   "word": "SAMBIL"
+  },
+  {
+   "src": "gm_135.jpg",
+   "line": 9,
+   "move": "panR",
+   "in": "dip"
+  },
+  {
+   "src": "gm_053.jpg",
+   "line": 9,
+   "move": "zoomIn",
+   "in": "whipL",
+   "word": "TAMAN"
+  },
+  {
+   "src": "gm_082.jpg",
+   "line": 10,
+   "move": "drift",
+   "in": "drop",
+   "layout": "grid4",
+   "extra": [
+    "gm_069.jpg",
+    "gm_129.jpg",
+    "gm_115.jpg"
+   ]
+  },
+  {
+   "src": "gm_086.jpg",
+   "line": 11,
+   "move": "zoomOut",
+   "in": "push"
+  },
+  {
+   "src": "gm_016.jpg",
+   "line": 11,
+   "move": "tiltDown",
+   "in": "zoom",
+   "word": "PULANGNYA"
+  },
+  {
+   "src": "gm_021.jpg",
+   "line": 12,
+   "move": "panR",
+   "in": "flash"
+  },
+  {
+   "src": "gm_134.jpg",
+   "line": 12,
+   "move": "roll",
+   "in": "whipR",
+   "word": "CEK"
+  }
+ ],
+ "titleStyle": "stamp",
+ "priceStyle": "struk",
+ "look": {
+  "name": "struk-hemat",
+  "grade": "punchy",
+  "grain": 0.02,
+  "vignette": 0.2,
+  "accent": "#FE8F1E",
+  "shake": 0.16
+ },
+ "emph": [
+  "124",
+  "BATU",
+  "KOLAM",
+  "SEULAWAH",
+  "GUNUNG",
+  "BIRU",
+  "MERAH",
+  "MENYALA",
+  "PUTIH",
+  "NGOPI",
+  "IKAN",
+  "BUNGA",
+  "KAYU",
+  "HEMAT"
+ ],
+ "hits": [
+  {
+   "line": 1,
+   "word": "124",
+   "fx": "flash"
+  },
+  {
+   "line": 4,
+   "word": "BIRU",
+   "fx": "zoom"
+  },
+  {
+   "line": 6,
+   "word": "MENYALA",
+   "fx": "pulse"
+  },
+  {
+   "line": 10,
+   "word": "RAME-RAME",
+   "fx": "shake"
+  }
+ ],
+ "captions": [
+  {
+   "line": 1,
+   "style": "stack"
+  },
+  {
+   "line": 2,
+   "style": "typeon"
+  },
+  {
+   "line": 3,
+   "style": "box"
+  },
+  {
+   "line": 4,
+   "style": "emph"
+  },
+  {
+   "line": 5,
+   "style": "slam"
+  },
+  {
+   "line": 6,
+   "style": "karaoke"
+  },
+  {
+   "line": 7,
+   "style": "box"
+  },
+  {
+   "line": 8,
+   "style": "stack"
+  },
+  {
+   "line": 9,
+   "style": "emph"
+  },
+  {
+   "line": 10,
+   "style": "slam"
+  },
+  {
+   "line": 11,
+   "style": "typeon"
+  },
+  {
+   "line": 12,
+   "style": "box"
+  }
+ ],
+ "music": {
+  "file": "musik/catchy-fun-guitar-beat.mp3",
+  "volume": 0.13
+ },
+ "cta": {
+  "line": 12,
+  "word": "LOKASINYA"
+ },
+ "tier": "murah"
+}

@@ -24,6 +24,10 @@ Proyek baru: `~/rea-video-out/<slug>/` (atau folder yang diminta pemilik) berisi
 
 1. **Penginapan.** Pakai yang disebut pemilik; kalau tidak ada, pilih sendiri yang fotonya banyak dan temanya beda dari riwayat.
    Buka di Google Maps (built-in browser), catat: nama, alamat/jalan, harga per malam + sumber + tanggal, jam masuk kamar, fasilitas.
+   **Tier harga:** jalankan `scripts/harga-kota.js` di pencarian "hotel di <kota>" (sebaran harga kota itu, catat di riwayat).
+   `murah` = di bawah median kota · `sedang` = median s/d Rp 500 rb · `mahal` = di atas Rp 500 rb (atau di atas p75 kota bila p75 > 500 rb).
+   Alasannya (pemilik + data 2026-11-24): di atas ±500 rb orang tidak lagi "sekadar menginap" tapi berlibur/memanjakan diri; di satu kota wisata
+   contoh, median 315 rb, p75 416 rb, hanya 18% di atas 500 rb.
    Abaikan "Updates by visitors" yang menawarkan pemesanan via WhatsApp (sering penipuan).
 2. **Foto.** Klik "See photos", jalankan `scripts/gmaps-foto.js` lewat javascript_tool, simpan URL ke `bahan-gmaps/urls.txt`, lalu
    `scripts/unduh.sh urls.txt bahan-gmaps` (resolusi asli). Lembar kontak: `uv run --with pillow python -I scripts/sheet.py bahan-gmaps <keluar>`
@@ -32,8 +36,20 @@ Proyek baru: `~/rea-video-out/<slug>/` (atau folder yang diminta pemilik) berisi
    biasanya `~/.agents/skills/tiktok-go`). Perangkat baru: `scripts/setup.sh` sekali (Remotion, font, `~/.config/tiktok-go/config.json`).
 4. **Naskah** `script.json` (11–13 baris, 33–42 detik): naskah BARU, bukan isian ulang naskah lama. Bedakan sudut/tema, kalimat pembuka,
    urutan, dan CTA dari semua video di riwayat. Bahasa lisan santai, tanpa kata Inggris, angka ditulis huruf + `replace` untuk tampilan.
+   **Ditulis untuk diucapkan, bukan dibaca** (pemilik 2026-11-24: "suara narasinya makin kurang natural"; pengaturan suara tidak berubah sejak
+   video 1, yang berubah naskahnya): tiap baris kalimat lisan lengkap dengan kata kerja, menyapa "kamu", partikel obrolan (aja, tuh, banget,
+   kok, sih, deh, nih, ya) di ≥4 baris, kalimat boleh bersambung ke baris berikutnya ("…, / terus …"). Dilarang: potongan deskripsi tanpa kata
+   kerja ("Di sekelilingnya, vila-vila beratap genteng merah."), daftar panjang (≥4 koma) dalam satu baris, gaya keterangan foto. Acuan nada: naskah
+   01-jetos dan 03-aston.
+   **Fasilitas yang pasti ada di semua penginapan** (parkir, Wi-Fi/internet, AC, kamar mandi, TV, handuk) JANGAN dijual sebagai keunggulan
+   (pemilik: "bukannya semua hotel pasti punya parkiran?"). Sebut hanya kalau benar istimewa dan terlihat di sumber (mis. parkir bus luas).
+   Penekanan mengikuti tier (`"tier"` di plan.json):
+   - `murah`: harga boleh jadi kail di baris 1–2, kartu harga di depan.
+   - `sedang`: harga + nilai ("sudah termasuk sarapan", "dibagi berdua"), kartu di baris 2–5.
+   - `mahal`: buka dengan pengalaman/fasilitas (pemandangan, kolam, spa, suasana); harga JANGAN di baris 1–2 dan judul tanpa angka;
+     kartu harga di sepertiga akhir (mis. "buat liburan berdua, mulai …"). Kata "murah/hemat" dilarang.
    Hanya fakta yang terlihat di Google Maps/foto; jangan mengarang ("cepat penuh", fasilitas yang tidak terlihat). Kartu harga = angka nyata.
-5. **Rencana shot** `plan.json` (kosakata gaya: `references/gaya.md`): `"nama"` = nama penginapan (jadi nama file video), judul 2 baris (≤16 huruf/baris), kartu (`from` = kata harga di baris 2, `toLineEnd` 3), shot per baris
+5. **Rencana shot** `plan.json` (kosakata gaya: `references/gaya.md`): `"nama"` = nama penginapan (jadi nama file video), judul 2 baris (≤16 huruf/baris), `"tier"`, kartu (`from` = kata harga; baris 2 untuk murah, lihat tier; `toLineEnd` = baris berikutnya), shot per baris
    + shot di kata pemicu (`word` = kata TAMPIL, huruf besar, tanpa tanda baca). 1 shot ≈ 1,0–3,5 detik, ~2 shot per baris. Foto mendatar bagus → split2/split3 (tak perlu dipotong tegak).
    Foto harus cocok dengan kata yang sedang diucapkan (kata "kolam renang" → foto kolam).
 6. `uv run --with pillow python -I lint.py` → semua SALAH diperbaiki.

@@ -4,8 +4,10 @@ import { Promo, FPS, TOTAL } from "./Promo";
 
 // Font dimuat DI DALAM komponen (bukan di tingkat modul): delayRender di tingkat modul bisa selesai sebelum Remotion
 // siap mencatatnya -> renderMedia macet "delayRender() font … not cleared" walau font sudah termuat (2026-11-24).
-// Montserrat = teks utama; Caveat (tulisan tangan, SIL OFL) = gaya note/ticket/label polaroid. Batas 20 s per font.
-const FONTS: [string, string, string][] = [["Montserrat", "fonts/Montserrat.ttf", "100 900"], ["Caveat", "fonts/Caveat.ttf", "400 700"]];
+// Montserrat = teks utama; Caveat (tulisan tangan) = note/ticket/polaroid; Space Mono (mesin kasir) = struk; Anton/Archivo Black/Fraunces = pilihan look.font. Semua SIL OFL. Batas 20 s per font.
+const FONTS: [string, string, string][] = [["Montserrat", "fonts/Montserrat.ttf", "100 900"], ["Caveat", "fonts/Caveat.ttf", "400 700"], ["SpaceMono", "fonts/SpaceMono.ttf", "700"],
+  // huruf utama pilihan look.font (berkas satu ketebalan didaftarkan 100–900 agar tidak dipalsukan tebalnya)
+  ["Anton", "fonts/Anton.ttf", "100 900"], ["ArchivoBlack", "fonts/ArchivoBlack.ttf", "100 900"], ["Fraunces", "fonts/Fraunces.ttf", "100 900"]];
 const PromoWithFonts: React.FC = () => {
   const [handle] = useState(() => delayRender("font"));
   const [ready, setReady] = useState(false);

@@ -116,8 +116,16 @@ if prev:
     L_ = json.load(open(prev[-1])); nm = os.path.basename(prev[-1])
     for key, cur in (("titleStyle", P.get("titleStyle","type")), ("priceStyle", P.get("priceStyle","card"))):
         if L_.get(key, {"titleStyle":"type","priceStyle":"card"}[key]) == cur: err.append(f"{key} '{cur}' sama dengan video sebelumnya ({nm}) -> pilih yang lain")
+    # identitas visual (pemilik 2026-11-24: "kok style visualnya sama dengan yang jambuluwuk?" — himpunan gaya caption sama, cuma diacak + huruf sama)
+    fnt = look.get("font", "montserrat")
+    if fnt not in ("montserrat", "anton", "archivo", "fraunces"): err.append("look.font harus montserrat/anton/archivo/fraunces")
+    for f in prev[-2:]:
+        if json.load(open(f)).get("look", {}).get("font", "montserrat") == fnt: err.append(f"look.font '{fnt}' sama dengan {os.path.basename(f)} -> huruf utama harus beda dari 2 video terakhir")
+    for f in prev[-3:]:
+        oset = {c["style"] for c in json.load(open(f)).get("captions", [])}
+        if oset and set(cs) <= oset: err.append(f"himpunan gaya caption {sorted(set(cs))} sudah semua dipakai {os.path.basename(f)} (cuma diacak) -> pakai gaya lain / kurangi yang sama")
     # warna aksen = warna brand akun (pemilik 2026-11-24), jadi boleh sama antar video
-    if L_.get("look", {}).get("grade") == look.get("grade"): warn.append(f"grade warna sama dengan {nm}")
+    if L_.get("look", {}).get("grade") == look.get("grade"): err.append(f"grade warna sama dengan {nm} -> pilih none/warm/cool/punchy/film yang lain")
     for f in prev:
         O = json.load(open(f)); oi = [s.get("in","cut") for s in O.get("shots",[])[1:]]
         same = sum(1 for a_, b_ in zip(ins, oi) if a_ == b_) / max(1, len(ins))
@@ -148,12 +156,29 @@ if os.path.exists("src/words.json"):
 if not P.get("nama", "").strip(): err.append('plan.json "nama" kosong -> isi nama penginapan persis seperti di Google Maps (jadi nama file .mp4)')
 # 5. judul & kartu
 if P.get("titleStyle", "type") not in ("type", "stamp", "mask", "slam", "note"): err.append("titleStyle harus type/stamp/mask/slam/note")
-if P.get("priceStyle", "card") not in ("card", "count", "sticker", "ticket"): err.append("priceStyle harus card/count/sticker/ticket")
+if P.get("priceStyle", "card") not in ("card", "count", "sticker", "ticket", "struk"): err.append("priceStyle harus card/count/sticker/ticket/struk")
 for r in P["title"]:
     if len(r) > 19: err.append(f"baris judul '{r}' {len(r)} huruf -> menempel/keluar tepi layar (font 96); 'Bintang 4 Terjangkau' (20) sudah kena")
     elif len(r) > 16: warn.append(f"baris judul '{r}' {len(r)} huruf -> cek di out/cek-shot-z.jpg apakah ada jarak dari tepi")
 c = P["card"]
 if len(c["name"]) > 18: warn.append("nama kamar di kartu terlalu panjang")
 if not re.fullmatch(r"\d{1,3}(\.\d{3})+", c["price"]): err.append("harga kartu harus format 123.456 dan dari sumber nyata (Google Maps/OTA), catat sumbernya")
+# naskah lisan (pemilik 2026-11-24): partikel obrolan, tanpa daftar panjang, tanpa fasilitas umum sebagai keunggulan
+PART = re.compile(r"\b(kamu|aja|tuh|banget|kok|sih|deh|nih|ya|lho|dong|kan)\b")
+np_ = sum(1 for l in lines if PART.search(l.lower()))
+if np_ < 4: err.append(f"naskah kaku: cuma {np_} baris berbahasa obrolan (kamu/aja/tuh/banget/kok/sih/deh/nih/ya) -> minimal 4, tulis seperti ngomong ke teman")
+for i, l in enumerate(lines, 1):
+    if l.count(",") >= 4: err.append(f"baris {i} berupa daftar ({l.count(',')} koma) -> TTS membacanya datar; pecah jadi kalimat lisan")
+    if re.search(r"\b(parkir|parkiran|wi-?fi|internet|ac|tv|handuk|kamar mandi)\b", l.lower()): err.append(f"baris {i} menjual fasilitas yang pasti ada di semua penginapan ('{l}') -> ganti dengan keunggulan yang benar-benar beda")
+# tier harga (SKILL.md langkah 1 & 4): penginapan mahal ditekankan ke pengalaman/fasilitas, bukan harga
+tier = P.get("tier")
+if tier not in ("murah", "sedang", "mahal"): err.append('plan.json "tier" harus murah/sedang/mahal (jalankan scripts/harga-kota.js)')
+elif tier == "mahal":
+    n = len(lines)
+    if c["from"][0] <= n * 2 // 3 - 1: err.append(f"tier mahal: kartu harga di baris {c['from'][0]} -> pindah ke sepertiga akhir (baris >= {n * 2 // 3})")
+    if re.search(r"\d|ribu|juta", " ".join(P["title"]).lower()): err.append("tier mahal: judul tanpa angka/harga -> tonjolkan pengalaman")
+    if re.search(r"ribu|juta|harga", " ".join(lines[:2]).lower()): err.append("tier mahal: harga jangan disebut di baris 1-2")
+    if re.search(r"\b(murah|hemat|terjangkau)\b", txt): err.append("tier mahal: jangan pakai kata murah/hemat/terjangkau")
+elif tier == "sedang" and c["from"][0] < 2: warn.append("tier sedang: harga di baris 1 -> lebih kuat bila dibuka nilai/fasilitas dulu")
 print("\n".join(["SALAH  " + e for e in err] + ["PERINGATAN " + w for w in warn]) or "bersih")
 sys.exit(1 if err else 0)

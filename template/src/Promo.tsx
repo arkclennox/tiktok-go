@@ -13,7 +13,10 @@ const FW = 1080, FH = 1920;
 type Word = { text: string; show: string; start: number; end: number };
 type Line = { line: number; start: number; end: number; words: Word[] };
 const LINES = W.lines as Line[];
-const FONT = "Montserrat, sans-serif";
+// huruf utama per video (look.font, lint memaksa beda dari video sebelumnya): montserrat | anton (tinggi ramping) | archivo (lebar tebal) | fraunces (serif, cocok tier mahal)
+const FAMS: Record<string, string> = { montserrat: "Montserrat", anton: "Anton", archivo: "ArchivoBlack", fraunces: "Fraunces" };
+const FAM = FAMS[(C.look && C.look.font) || "montserrat"] || "Montserrat";
+const FONT = `${FAM}, sans-serif`;
 // warna brand akun (~/.config/tiktok-go/config.json "brand", disalin prep.py) — semua aksen ikut brand
 const BRAND = { light: "#FEB142", mid: "#FE8F1E", deep: "#F1541A", ...(C.brand || {}) };
 const LOOK = { grade: "none", grain: 0, vignette: 0.25, accent: BRAND.mid, shake: 0.18, ...(C.look || {}) };
@@ -22,7 +25,7 @@ const GRAD = `linear-gradient(135deg, ${BRAND.light} 0%, ${BRAND.mid} 55%, ${BRA
 // ukur lebar teks dengan font asli (Montserrat sudah dimuat sebelum render) -> ukuran huruf dikecilkan sampai muat. TIDAK ADA kata terpotong.
 let _ctx: CanvasRenderingContext2D | null = null;
 const SCRIPT = "Caveat, cursive"; // tulisan tangan (gaya note / tiket / label polaroid)
-let _fam = "Montserrat";
+let _fam = FAM;
 const textW = (txt: string, weight: number, size: number, ls = 0) => {
   if (!_ctx) _ctx = document.createElement("canvas").getContext("2d");
   _ctx!.font = `${weight} ${size}px ${_fam}`;
@@ -32,7 +35,7 @@ const fit = (txt: string, weight: number, size: number, maxW: number, ls = 0, ex
   const w = textW(txt, weight, size, ls) + extra;
   return w > maxW ? Math.floor((size * maxW) / w) : size;
 };
-const fitS = (txt: string, weight: number, size: number, maxW: number, extra = 0) => { _fam = "Caveat"; const r = fit(txt, weight, size, maxW, 0, extra); _fam = "Montserrat"; return r; };
+const fitS = (txt: string, weight: number, size: number, maxW: number, extra = 0) => { _fam = "Caveat"; const r = fit(txt, weight, size, maxW, 0, extra); _fam = FAM; return r; };
 const SAFE = 940; // lebar aman (1080 - 2 x 70)
 const EMPH = new Set<string>(C.emph || []);
 
@@ -344,7 +347,7 @@ const TITLE: string[] = C.title;
 const TSTYLE: string = C.titleStyle || "type";
 const tShadow = "0 0 3px rgba(0,0,0,.9), 0 4px 14px rgba(0,0,0,.75), 0 2px 2px rgba(0,0,0,.8)";
 const Title: React.FC<{ t: number }> = ({ t }) => {
-  const end = lastEnd(1) + 0.15;
+  const end = Math.min(lastEnd(1) + 0.15, CARD_FROM); // judul keluar sebelum kartu harga masuk (tidak bertumpuk)
   if (t > end) return null;
   const out = 1 - clamp01((t - (end - 0.15)) / 0.15);
   const box: React.CSSProperties = { position: "absolute", top: C.titleY ?? 450, width: "100%", textAlign: "center", fontFamily: FONT, color: "#fff", opacity: out };
@@ -590,6 +593,41 @@ const Price: React.FC<{ t: number; frame: number }> = ({ t, frame }) => {
         <div style={{ fontSize: 50, fontWeight: 900, lineHeight: 1 }}>Rp</div>
         <div style={{ fontSize: 76, fontWeight: 900, lineHeight: 1 }}>{fmt(priceNum * count)}</div>
         <div style={{ fontSize: 30, fontWeight: 700, marginTop: 6 }}>{C.card.priceNote}</div>
+      </div>
+    );
+  }
+  if (PSTYLE === "struk") {
+    // struk kasir keluar dari celah printer (rincian ala "breakdown"), baris muncul satu per satu, TOTAL = harga, cap HEMAT gradasi brand
+    const MONO = "SpaceMono, monospace";
+    const items: [string, string][] = C.card.items || [];
+    const feed = eo3((t - CARD_FROM) / 0.5);
+    const rowT = (i: number) => CARD_FROM + 0.35 + i * 0.22;
+    const totT = rowT(items.length) + 0.1;
+    const cnt = eo3((t - totT) / 0.6), stamp = backOut((t - totT - 0.7) / 0.22);
+    const zig = "polygon(" + Array.from({ length: 25 }, (_, i) => `${(i / 24) * 100}% ${i % 2 ? 100 : "calc(100% - 14px)"}`).join(",") + ",100% 0,0 0)";
+    return (
+      <div style={{ position: "absolute", top: 250, left: 0, right: 0, display: "flex", justifyContent: "center", opacity: out }}>
+        <div style={{ position: "absolute", top: -26, width: 700, height: 30, borderRadius: 15, background: "#2a2a2a", boxShadow: "0 6px 14px rgba(0,0,0,.5)" }} />
+        <div style={{ width: 640, overflow: "hidden", height: 760 * feed }}>
+          <div style={{ background: "#FFFDF7", padding: "34px 40px 44px", fontFamily: MONO, color: "#222", fontSize: 30, clipPath: zig, filter: "drop-shadow(0 10px 20px rgba(0,0,0,.35))" }}>
+            <div style={{ textAlign: "center", fontSize: fit(C.card.name || "", 700, 36, 560), whiteSpace: "nowrap", letterSpacing: 2 }}>{C.card.name}</div>
+            <div style={{ textAlign: "center", fontSize: 22, opacity: 0.7 }}>{C.card.receiptNote || ""}</div>
+            <div style={{ borderTop: "3px dashed #999", margin: "16px 0" }} />
+            {items.map(([k, v], i) => (
+              <div key={i} style={{ display: "flex", justifyContent: "space-between", opacity: t >= rowT(i) ? 1 : 0, transform: `translateY(${t >= rowT(i) ? 0 : 10}px)`, lineHeight: 1.6 }}>
+                <span>{k}</span><span style={{ color: BRAND.deep }}>{v}</span>
+              </div>
+            ))}
+            <div style={{ borderTop: "3px dashed #999", margin: "16px 0" }} />
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", opacity: t >= totT ? 1 : 0 }}>
+              <span style={{ fontSize: 34 }}>TOTAL</span>
+              <span style={{ fontSize: fit("Rp" + C.card.price, 700, 64, 380), whiteSpace: "nowrap" }}>Rp{fmt(priceNum * cnt)}</span>
+            </div>
+            <div style={{ textAlign: "right", fontSize: 24, opacity: t >= totT ? 0.75 : 0 }}>{C.card.priceNote}</div>
+          </div>
+        </div>
+        <div style={{ position: "absolute", top: 520, right: 150, transform: `scale(${2 - stamp}) rotate(-14deg)`, opacity: clamp01(stamp * 2), background: GRAD, color: "#fff",
+          fontFamily: FONT, fontWeight: 900, fontSize: 64, padding: "8px 30px", borderRadius: 14, border: "5px solid #fff", boxShadow: "0 8px 20px rgba(0,0,0,.4)", letterSpacing: 4 }}>{C.card.stamp || "HEMAT"}</div>
       </div>
     );
   }

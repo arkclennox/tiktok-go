@@ -25,6 +25,8 @@ Kalau menambah gaya baru: cari dulu acuan luar (artikel 2025–2026, blok hyperf
   [blitzcut caption trends 2026](https://blitzcutai.com/blog/tiktok-caption-trends-2026), [amraandelma text overlay](https://www.amraandelma.com/text-overlay-styles-influencers-are-using/),
   [filmora couple filters](https://filmora.wondershare.com/video-creative-tips/couple-video-filters-for-tiktok-trendy-pop-colors.html). Font Caveat (SIL OFL, google/fonts).
 
+- Gaya "struk kasir" (2026-11-24): rincian fasilitas dicetak baris demi baris lalu TOTAL menghitung naik + cap — untuk video hemat/rincian harga. Font Space Mono (SIL OFL, google/fonts).
+
 ## Kosakata (plan.json)
 
 | kunci | pilihan |
@@ -36,9 +38,9 @@ Kalau menambah gaya baru: cari dulu acuan luar (artikel 2025–2026, blok hyperf
 | `emph` | kata TAMPIL yang dibesarkan/diwarnai aksen (gaya emph & slam) |
 | `hits[]` | `{line, word, fx}` dengan fx `pulse` `flash` `shake` `zoom` — hentakan di kata penting |
 | `titleStyle` | `type` (lama) `stamp` `mask` `slam` `note` (catatan tangan + garis bawah digambar); `titleY` = posisi tegak judul |
-| `priceStyle` | `card` (kartu TikTok) `count` (angka menghitung naik) `sticker` `ticket` (tiket kertas + potongan brand, `card.stub`) |
+| `priceStyle` | `card` (kartu TikTok) `count` (angka menghitung naik) `sticker` `ticket` (tiket kertas + potongan brand, `card.stub`) `struk` (struk kasir tercetak dari celah printer, font Space Mono, `card.items` [[nama, nilai]…], `receiptNote`, `priceNote`, cap `card.stamp`; cocok tier murah) |
 | `shots[].z` / `oy` | zoom dasar & geser tegak (px) satu shot penuh; prep.py ikut memperbesar resolusi |
-| `look` | `{name, grade: none/warm/cool/punchy/film, grain 0–0.1, vignette 0–0.5, accent "#hex", shake ≈0.18}` |
+| `look` | `{name, font: montserrat/anton/archivo/fraunces, grade: none/warm/cool/punchy/film, grain 0–0.1, vignette 0–0.5, accent "#hex", shake ≈0.18}` — `font` = huruf utama judul/caption/harga (anton tinggi ramping, archivo lebar tebal, fraunces serif untuk tier mahal) |
 | `music` | `{file: "musik/<nama>.mp3", volume ≈0.13}` dari `~/sfx/musik` (CC0); prep.py menggeser titik mulai agar ketukan jatuh di potongan shot (beat-sync, `hyperframes beats`). Wajib, kecuali `musicOff` |
 | `cta` | `{line, word, x?, y?}` — pin lokasi bergaya logo brand memantul + panah ke tag lokasi |
 | `sfx` / `sfxOff` | ganti berkas efek suara (kunci: whoosh swish shutter thud pop glitch shimmer click coin) atau matikan |
@@ -60,7 +62,8 @@ Ukuran huruf diukur dengan font asli dan dikecilkan sampai muat 940 px (`fit()`)
 - ≥7 jenis gerak kamera, tidak ada gerak sama berurutan; shot 1 harus `ramp`/`punch`/`roll`/`dolly3d` (frame pertama bergerak).
 - ≥2 shot non-full dengan ≥2 jenis tata letak; split3/grid4 ≥1,6 s.
 - Caption diisi semua baris, ≥4 gaya, tidak ada gaya sama berurutan, karaoke ≤2 baris; ≥2 `hits`.
-- Beda dari video sebelumnya (`references/plan/*.json`): `titleStyle`, `priceStyle`, warna aksen; urutan transisi ≤35% sama;
+- Identitas visual: `look.font` beda dari 2 video terakhir; himpunan gaya caption tidak boleh sama/bagian dari salah satu 3 video terakhir (mengacak urutan saja = sama); grade beda dari video sebelumnya.
+- Beda dari video sebelumnya (`references/plan/*.json`): `titleStyle`, `priceStyle`; urutan transisi ≤35% sama;
   urutan gaya caption ≤40% sama; pembuka (gerak shot 1 + transisi shot 2) tidak sama.
 - Transisi harus muat (pre+post ≤60% durasi shot).
 

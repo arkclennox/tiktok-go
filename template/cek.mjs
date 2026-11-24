@@ -4,7 +4,7 @@
 // plus judul selesai diketik dan kartu harga. Hasil: out/cek/*.jpg lalu digabung jadi out/cek-shot.jpg (1 baris = 1 shot)
 // Wajib DIBUKA dan diperiksa dengan daftar periksa di SKILL.md sebelum `node render.mjs`.
 import { bundle } from "@remotion/bundler";
-import { renderStill, selectComposition } from "@remotion/renderer";
+import { openBrowser, renderStill, selectComposition } from "@remotion/renderer";
 import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
@@ -45,7 +45,13 @@ const serveUrl = await bundle({ entryPoint: path.resolve("src/index.ts") });
 const comp = await selectComposition({ serveUrl, id: "Promo", browserExecutable });
 fs.mkdirSync("out", { recursive: true }); fs.rmSync("out/cek", { recursive: true, force: true }); fs.readdirSync("out").filter((f) => f.startsWith("cek-shot-")).forEach((f) => fs.rmSync(`out/${f}`)); // lembar lama bisa menyesatkan
 fs.mkdirSync("out/cek", { recursive: true });
-for (const j of jobs) await renderStill({ composition: comp, serveUrl, frame: Math.round(j.t * 30), output: `out/cek/${j.name}.jpg`, imageFormat: "jpeg", jpegQuality: 85, scale: 0.4, browserExecutable });
+// satu browser untuk semua frame + coba ulang 2x: browser baru per frame sesekali macet di delayRender "font" (2026-11-24)
+const puppeteerInstance = await openBrowser("chrome", { browserExecutable });
+for (const j of jobs) for (let k = 0; ; k++) {
+  try { await renderStill({ composition: comp, serveUrl, frame: Math.round(j.t * 30), output: `out/cek/${j.name}.jpg`, imageFormat: "jpeg", jpegQuality: 85, scale: 0.4, browserExecutable, puppeteerInstance, timeoutInMilliseconds: 60000 }); break; }
+  catch (e) { if (k >= 2) throw e; console.log(`ulang ${j.name}: ${String(e.message).slice(0, 80)}`); }
+}
+await puppeteerInstance.close({ silent: true });
 const tile = path.join(path.dirname(fs.realpathSync(process.argv[1])), "..", "scripts", "tile.py");
 const tilePy = fs.existsSync(tile) ? tile : path.join(process.env.HOME, ".agents/skills/tiktok-go/scripts/tile.py");
 // lembar per 8 shot agar tetap terbaca

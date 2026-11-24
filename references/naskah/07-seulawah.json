@@ -1,0 +1,35 @@
+{
+ "tts": {
+  "provider": "elevenlabs",
+  "voiceId": "iWydkXKoiVtvdn4vLKp9",
+  "modelId": "eleven_multilingual_v2",
+  "voiceSettings": {
+   "stability": 0.4,
+   "similarity_boost": 0.8,
+   "style": 0.35,
+   "speed": 1.2,
+   "use_speaker_boost": true
+  }
+ },
+ "language": "id",
+ "overlap": 0.3,
+ "replace": {
+  "seratus dua puluh empat ribuan": "124 RIBUAN",
+  "jam dua siang": "JAM 2 SIANG",
+  "jam dua belas": "JAM 12"
+ },
+ "lines": [
+  "Seratus dua puluh empat ribuan di Batu, udah dapat kolam renang kayak gini.",
+  "Rinciannya, kamar berdua, kolam renang, internet, sampai parkir.",
+  "Namanya Seulawah, di Jalan Mawar, Songgokerto.",
+  "Kolamnya menghadap deretan gunung, airnya biru banget.",
+  "Di sekelilingnya, vila-vila beratap genteng merah.",
+  "Malamnya, lampu-lampu gantung menyala di atas kolam.",
+  "Kamarnya sederhana, ranjangnya putih dan rapi.",
+  "Paginya ngopi di teras, sambil lihat gunung.",
+  "Ada kolam ikan dan taman yang penuh bunga.",
+  "Kafenya dari kayu, enak buat makan malam rame-rame.",
+  "Kamar siap jam dua siang, pulangnya paling lambat jam dua belas.",
+  "Mau liburan hemat ke Batu? Cek tag lokasinya dulu."
+ ]
+}
