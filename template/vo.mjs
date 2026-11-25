@@ -152,6 +152,33 @@ function align(text, wav) {
   return { words: mapByChars(tokens, [[0, a], [1, b]]), how: "rata" };
 }
 
+// --- rapatkan jeda di DALAM kalimat (pemilik 2026-11-26: "ada jeda di kalimat yang seharusnya tidak perlu dijeda") ---
+// TTS sering diam 0,2–0,5 s di koma, di tengah angka ("tiga ratus | tiga puluh") atau di tengah frasa. Hening diukur dari audio
+// (silencedetect), lalu dipotong: sisa 0,06 s antar kata, 0,10 s setelah koma, 0,25 s setelah . ? ! — waktu kata ikut digeser.
+// Matikan dengan "tightPauses": false di script.json.
+function tighten(wav, words) {
+  const r = spawnSync("ffmpeg", ["-i", wav, "-af", "silencedetect=noise=-35dB:d=0.09", "-f", "null", "-"], { encoding: "utf8" });
+  const S = [...r.stderr.matchAll(/silence_start: ([\d.]+)/g)].map((m) => +m[1]);
+  const E = [...r.stderr.matchAll(/silence_end: ([\d.]+)/g)].map((m) => +m[1]);
+  const a = words[0].start + 0.05, b = words[words.length - 1].end - 0.05, cuts = [];
+  S.forEach((s, k) => {
+    const e = E[k]; if (e === undefined || s < a || e > b) return;
+    const prev = [...words].reverse().find((w) => w.start < s) || words[0];
+    const keep = /[.?!]["')]*$/.test(prev.text) ? 0.25 : /[,;:]$/.test(prev.text) ? 0.1 : 0.06;
+    if (e - s > keep + 0.03) cuts.push([s + keep / 2, e - keep / 2]);
+  });
+  if (!cuts.length) return { words, cut: 0 };
+  const keepSeg = []; let t = 0;
+  for (const [c0, c1] of cuts) { keepSeg.push([t, c0]); t = c1; }
+  const fl = keepSeg.map(([x, y], k) => `[0:a]atrim=${x.toFixed(4)}:${y.toFixed(4)},asetpts=PTS-STARTPTS[k${k}]`).join(";")
+    + `;[0:a]atrim=start=${t.toFixed(4)},asetpts=PTS-STARTPTS[k${keepSeg.length}];`
+    + [...keepSeg, 0].map((_, k) => `[k${k}]`).join("") + `concat=n=${keepSeg.length + 1}:v=0:a=1[o]`;
+  const tmp = wav.replace(/\.wav$/, ".tight.wav");
+  ff(["-i", wav, "-filter_complex", fl, "-map", "[o]", "-ar", "44100", "-ac", "1", tmp]); fs.renameSync(tmp, wav);
+  const shift = (x) => { let d = 0; for (const [c0, c1] of cuts) { if (x >= c1) d += c1 - c0; else if (x > c0) d += x - c0; } return +(x - d).toFixed(3); };
+  return { words: words.map((w) => ({ ...w, start: shift(w.start), end: shift(w.end) })), cut: cuts.reduce((s, [c0, c1]) => s + c1 - c0, 0) };
+}
+
 // --- buat / ambil cache tiap kalimat ---
 fs.mkdirSync("voice", { recursive: true });
 const sig = crypto.createHash("sha1").update(JSON.stringify({ tts, LANG })).digest("hex").slice(0, 10);
@@ -160,13 +187,19 @@ for (const [i, text] of cfg.lines.entries()) {
   const id = `s${String(i + 1).padStart(2, "0")}`, wav = `voice/${id}.wav`, js = `voice/${id}.json`;
   const cached = fs.existsSync(js) && fs.existsSync(wav) && JSON.parse(fs.readFileSync(js, "utf8"));
   let words, how;
+  let tight = cached && cached.tight;
   if (!FORCE && cached && cached.text === text && cached.sig === sig) ({ words, how } = cached);
   else {
     const got = await providers[tts.provider](text, wav, i);
     if (got && got.length) { words = got; how = tts.provider; } else ({ words, how } = align(text, wav));
-    fs.writeFileSync(js, JSON.stringify({ text, sig, how, words }));
+    tight = false;
     console.log("suara", id, `(${tts.provider}, waktu kata: ${how})`);
   }
+  if (cfg.tightPauses !== false && !tight) {
+    const t = tighten(wav, words); words = t.words; tight = true;
+    if (t.cut > 0.02) console.log("  jeda", id, `dipotong ${t.cut.toFixed(2)} s`);
+  }
+  fs.writeFileSync(js, JSON.stringify({ text, sig, how, words, tight }));
   lines.push({ id, wav, words, speechStart: words[0].start, speechEnd: words[words.length - 1].end });
 }
 

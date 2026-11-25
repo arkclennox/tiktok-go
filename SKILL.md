@@ -87,7 +87,7 @@ mirip video sebelumnya (`references/plan/*.json`). Butuh gaya baru? Cari acuan l
 Huruf utama = `look.font` (montserrat/anton/archivo/fraunces, beda dari 2 video terakhir). Warna = brand akun pemilik (`~/.config/tiktok-go/config.json` "brand", lokal). Musik latar WAJIB + efek suara otomatis dari `~/sfx` (CC0).
 **Bebas mengunduh apa pun yang dibutuhkan** (aturan pemilik): musik/SFX CC0 baru (`python3 ~/sfx/tools/fs.py`), ikon, foto resmi/OTA — jangan membatasi diri pada yang sudah ada.
 **Caption tidak boleh terpotong:** periksa `out/cek-shot-cap*.jpg` dan, setelah render, lembar 4–8 fps area caption dari MP4.
-VO: per kalimat, kalimat berikutnya mulai 0,3 s sebelum kalimat sekarang selesai, loudnorm −14 LUFS. Default ElevenLabs suara Cahaya
+VO: per kalimat, kalimat berikutnya mulai 0,3 s sebelum kalimat sekarang selesai, jeda di dalam kalimat dirapatkan otomatis (vo.mjs, pemilik: "ada jeda yang seharusnya tidak perlu"), loudnorm −14 LUFS. Default ElevenLabs suara Cahaya
 `iWydkXKoiVtvdn4vLKp9`, eleven_multilingual_v2, id, stability 0.4, similarity 0.8, style 0.35, speed 1.2, dengan previous/next_text.
 
 ## Berkas
