@@ -71,7 +71,7 @@ for s in P["shots"]:
 # 3b. ANTI-MONOTON (aturan pemilik 2026-11-23: "caption, efek, transisi terlalu monoton"). Kosakata & sumber: references/gaya.md
 TRANS = ["cut","flash","dip","leak","zoom","spin","whipL","whipR","whipU","whipD","push","drop","iris","slice","glitch"]
 MOVES = ["zoomIn","zoomOut","panR","panL","tiltUp","tiltDown","drift","ramp","punch","dolly3d","roll"]
-LAYS = ["full","split2","split3","grid4","frame"]; CAPS = ["karaoke","box","slam","emph","stack","typeon","note"]
+LAYS = ["full","split2","split3","grid4","frame"]; CAPS = ["karaoke","box","slam","emph","stack","typeon","note","rambu"]
 SH = P["shots"]; ins = [s.get("in","cut") for s in SH[1:]]; mv = [s.get("move") for s in SH]; lay = [s.get("layout","full") for s in SH]
 for s in SH:
     if s.get("in","cut") not in TRANS: err.append(f"{s['src']}: transisi '{s.get('in')}' tidak dikenal ({', '.join(TRANS)})")
@@ -99,6 +99,7 @@ cs = [cap.get(i+1) for i in range(len(lines))]
 for i, c_ in enumerate(cs, 1):
     if c_ and c_ not in CAPS: err.append(f"gaya caption baris {i} '{c_}' tidak dikenal")
 if len(set(cs)) < 4: err.append(f"gaya caption cuma {len(set(cs))} -> minimal 4")
+if set(cs) >= set(CAPS): err.append("semua gaya caption dipakai -> video berikutnya tidak bisa lolos aturan himpunan; sisakan minimal 2 gaya")
 for i in range(1, len(cs)):
     if cs[i] == cs[i-1]: err.append(f"gaya caption sama di baris {i} dan {i+1} ({cs[i]})")
 if cs.count("karaoke") > 2: err.append("karaoke (gaya lama) maksimal 2 baris")

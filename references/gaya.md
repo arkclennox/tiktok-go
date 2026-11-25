@@ -34,7 +34,7 @@ Kalau menambah gaya baru: cari dulu acuan luar (artikel 2025–2026, blok hyperf
 | `shots[].in` (transisi masuk) | `cut` `flash` `dip` `leak` `zoom` `spin` `whipL/R/U/D` `push` `drop` `iris` `slice` `glitch` |
 | `shots[].move` | `zoomIn` `zoomOut` `panR` `panL` `tiltUp` `tiltDown` `drift` `ramp` (speed ramp) `punch` (crash zoom di `punch:[baris,"KATA"]`) `dolly3d` `roll` |
 | `shots[].layout` | `full`, `split2` (+1 foto di `extra`), `split3` (+2), `grid4` (+3), `frame` (polaroid jatuh + kilat, `label` opsional) |
-| `captions[]` per baris | `karaoke` (lama) `box` `slam` `emph` `stack` `typeon` `note` (tulisan tangan Caveat, kata aktif warna brand + coretan); `y` opsional = posisi tegak (geser kalau menutupi papan nama) |
+| `captions[]` per baris | `karaoke` (lama) `box` `slam` `emph` `stack` `typeon` `note` (tulisan tangan Caveat, kata aktif warna brand + coretan) `rambu` (papan nama jalan hijau berayun turun, kata aksen kuning; cocok untuk sudut lokasi/jalan kaki); `y` opsional = posisi tegak (geser kalau menutupi papan nama) |
 | `emph` | kata TAMPIL yang dibesarkan/diwarnai aksen (gaya emph & slam) |
 | `hits[]` | `{line, word, fx}` dengan fx `pulse` `flash` `shake` `zoom` — hentakan di kata penting |
 | `titleStyle` | `type` (lama) `stamp` `mask` `slam` `note` (catatan tangan + garis bawah digambar); `titleY` = posisi tegak judul |

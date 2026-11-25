@@ -431,7 +431,7 @@ const Title: React.FC<{ t: number }> = ({ t }) => {
   );
 };
 
-// ---------- caption per baris (gaya: karaoke | box | slam | emph | stack | typeon) ----------
+// ---------- caption per baris (gaya: karaoke | box | slam | emph | stack | typeon | note | rambu) ----------
 type Chunk = { words: Word[]; from: number; to: number; line: number; style: string };
 const CAPSTYLE: Record<number, string> = {};
 const CAPY: Record<number, number> = {};
@@ -440,7 +440,7 @@ const CHUNKS: Chunk[] = (() => {
   const out: Chunk[] = [];
   for (const L of LINES) {
     const style = CAPSTYLE[L.line] || "karaoke";
-    const max = style === "slam" ? 1 : style === "stack" ? 3 : style === "typeon" || style === "note" ? 4 : 3, maxLen = style === "typeon" ? 26 : style === "note" ? 22 : 19;
+    const max = style === "slam" ? 1 : style === "stack" ? 3 : style === "typeon" || style === "note" ? 4 : 3, maxLen = style === "typeon" ? 26 : style === "note" ? 22 : style === "rambu" ? 20 : 19;
     let cur: Word[] = [];
     const flush = () => { if (cur.length) out.push({ words: cur, from: cur[0].start, to: 0, line: L.line, style }); cur = []; };
     L.words.filter((w) => w.show).forEach((w) => {
@@ -531,6 +531,22 @@ const Caption: React.FC<{ t: number }> = ({ t }) => {
               </span>
             );
           })}
+        </div>
+      );
+    }
+    case "rambu": { // papan nama jalan hijau (rambu petunjuk) berayun turun dari dua gantungan; kata muncul utuh, kata aksen kuning
+      const size = fit(all, 800, 62, SAFE - 120, 1), sw = spring({ frame: Math.round((t - c.from + 0.03) * FPS), fps: FPS, config: { damping: 9, stiffness: 160 } });
+      return (
+        <div style={{ position: "absolute", left: 0, right: 0, top: Y ?? 1390, display: "flex", justifyContent: "center" }}>
+          <div style={{ position: "relative", transformOrigin: "50% -40px", transform: `translateY(${(1 - Math.min(sw, 1)) * -40}px) rotate(${(1 - sw) * 7}deg)`, opacity: clamp01(sw * 3) }}>
+            {[0.2, 0.8].map((x, k) => <div key={k} style={{ position: "absolute", left: `${x * 100}%`, top: -40, width: 8, height: 44, marginLeft: -4, background: "#9aa3a8", borderRadius: 4, boxShadow: "0 2px 4px rgba(0,0,0,.5)" }} />)}
+            <div style={{ background: "#0B6B3A", borderRadius: 14, padding: "16px 34px", border: "4px solid #063d21", boxShadow: "inset 0 0 0 6px #fff, 0 10px 26px rgba(0,0,0,.45)",
+              fontFamily: FONT, fontWeight: 800, fontSize: size, color: "#fff", textTransform: "uppercase", letterSpacing: 1, whiteSpace: "nowrap" }}>
+              {c.words.map((w, i) => (
+                <span key={i} style={{ display: "inline-block", marginLeft: i ? "0.3em" : 0, color: isE(w) ? "#FFD23F" : "#fff", opacity: t >= w.start - 0.05 ? 1 : 0.18 }}>{w.show}</span>
+              ))}
+            </div>
+          </div>
         </div>
       );
     }

@@ -1,0 +1,290 @@
+{
+ "nama": "Hotel 88 Jember",
+ "bahan": "../bahan-gmaps",
+ "title": [
+  "Nginep di",
+  "tengah Jember"
+ ],
+ "card": {
+  "photo": "gm_074.jpg",
+  "badge": "Tengah kota",
+  "name": "Hotel 88 Jember",
+  "chips": [
+   "Jl. Diponegoro",
+   "Jalan kaki ke alun-alun"
+  ],
+  "notes": [],
+  "price": "344.784",
+  "priceNote": "per malam · Agoda",
+  "button": "Pesan",
+  "from": [
+   3,
+   "SEMALAMNYA"
+  ],
+  "toLineEnd": 3
+ },
+ "shots": [
+  {
+   "src": "gm_071.jpg",
+   "line": 1,
+   "move": "ramp",
+   "in": "cut"
+  },
+  {
+   "src": "gm_135.jpg",
+   "line": 1,
+   "move": "panR",
+   "in": "slice",
+   "word": "TENANG"
+  },
+  {
+   "src": "gm_001.jpg",
+   "line": 2,
+   "move": "zoomIn",
+   "in": "zoom",
+   "layout": "frame",
+   "label": "Jl. Diponegoro 43"
+  },
+  {
+   "src": "gm_088.jpg",
+   "line": 2,
+   "move": "tiltUp",
+   "in": "whipR",
+   "word": "PAS"
+  },
+  {
+   "src": "gm_074.jpg",
+   "line": 3,
+   "move": "zoomOut",
+   "in": "leak"
+  },
+  {
+   "src": "gm_028.jpg",
+   "line": 3,
+   "move": "panL",
+   "in": "flash",
+   "word": "KAMARNYA"
+  },
+  {
+   "src": "gm_002.jpg",
+   "line": 4,
+   "move": "panR",
+   "in": "iris"
+  },
+  {
+   "src": "gm_129.jpg",
+   "line": 4,
+   "move": "tiltDown",
+   "in": "push",
+   "word": "STASIUN"
+  },
+  {
+   "src": "gm_066.jpg",
+   "line": 5,
+   "move": "drift",
+   "in": "glitch",
+   "layout": "split2",
+   "extra": [
+    "gm_076.jpg"
+   ]
+  },
+  {
+   "src": "gm_216.jpg",
+   "line": 5,
+   "move": "zoomIn",
+   "in": "dip",
+   "word": "ATAP-ATAP"
+  },
+  {
+   "src": "gm_124.jpg",
+   "line": 6,
+   "move": "panR",
+   "in": "whipU"
+  },
+  {
+   "src": "gm_083.jpg",
+   "line": 6,
+   "move": "zoomOut",
+   "in": "spin",
+   "word": "RUANG"
+  },
+  {
+   "src": "gm_047.jpg",
+   "line": 7,
+   "move": "drift",
+   "in": "drop",
+   "layout": "grid4",
+   "extra": [
+    "gm_022.jpg",
+    "gm_054.jpg",
+    "gm_012.jpg"
+   ]
+  },
+  {
+   "src": "gm_153.jpg",
+   "line": 7,
+   "move": "punch",
+   "in": "whipL",
+   "punch": [
+    7,
+    "LAUKNYA"
+   ],
+   "word": "DULU"
+  },
+  {
+   "src": "gm_143.jpg",
+   "line": 8,
+   "move": "panL",
+   "in": "zoom"
+  },
+  {
+   "src": "gm_052.jpg",
+   "line": 8,
+   "move": "zoomIn",
+   "in": "leak",
+   "word": "SEPEDA"
+  },
+  {
+   "src": "gm_150.jpg",
+   "line": 9,
+   "move": "tiltUp",
+   "in": "slice"
+  },
+  {
+   "src": "gm_081.jpg",
+   "line": 9,
+   "move": "zoomOut",
+   "in": "iris",
+   "word": "LANGIT"
+  },
+  {
+   "src": "gm_094.jpg",
+   "line": 10,
+   "move": "roll",
+   "in": "flash"
+  },
+  {
+   "src": "gm_026.jpg",
+   "line": 10,
+   "move": "zoomIn",
+   "in": "push",
+   "word": "MATAHARI"
+  },
+  {
+   "src": "gm_208.jpg",
+   "line": 11,
+   "move": "panL",
+   "in": "dip"
+  },
+  {
+   "src": "gm_167.jpg",
+   "line": 11,
+   "move": "zoomOut",
+   "in": "glitch",
+   "word": "TAG"
+  }
+ ],
+ "titleStyle": "stamp",
+ "priceStyle": "card",
+ "look": {
+  "name": "jalan-kaki-kota",
+  "font": "montserrat",
+  "grade": "cool",
+  "grain": 0.03,
+  "vignette": 0.22,
+  "shake": 0.18
+ },
+ "emph": [
+  "KENDARAAN",
+  "TENGAH",
+  "88",
+  "JANTUNG",
+  "LUAS",
+  "JALAN",
+  "KAKI",
+  "ATAP-ATAP",
+  "LEGA",
+  "PRASMANAN",
+  "SEPEDA",
+  "LANGIT",
+  "DEKET"
+ ],
+ "hits": [
+  {
+   "line": 1,
+   "word": "TENANG",
+   "fx": "pulse"
+  },
+  {
+   "line": 2,
+   "word": "88",
+   "fx": "flash"
+  },
+  {
+   "line": 7,
+   "word": "LAUKNYA",
+   "fx": "zoom"
+  },
+  {
+   "line": 10,
+   "word": "DEKET",
+   "fx": "shake"
+  }
+ ],
+ "captions": [
+  {
+   "line": 1,
+   "style": "emph"
+  },
+  {
+   "line": 2,
+   "style": "rambu"
+  },
+  {
+   "line": 3,
+   "style": "typeon"
+  },
+  {
+   "line": 4,
+   "style": "rambu",
+   "y": 1050
+  },
+  {
+   "line": 5,
+   "style": "note"
+  },
+  {
+   "line": 6,
+   "style": "box"
+  },
+  {
+   "line": 7,
+   "style": "karaoke"
+  },
+  {
+   "line": 8,
+   "style": "note"
+  },
+  {
+   "line": 9,
+   "style": "emph"
+  },
+  {
+   "line": 10,
+   "style": "rambu"
+  },
+  {
+   "line": 11,
+   "style": "karaoke"
+  }
+ ],
+ "music": {
+  "file": "musik/rabbit-bop.mp3",
+  "volume": 0.12
+ },
+ "cta": {
+  "line": 11,
+  "word": "TAG"
+ },
+ "tier": "sedang"
+}

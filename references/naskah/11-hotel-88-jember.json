@@ -1,0 +1,38 @@
+{
+ "tts": {
+  "provider": "elevenlabs",
+  "voiceId": "iWydkXKoiVtvdn4vLKp9",
+  "modelId": "eleven_multilingual_v2",
+  "voiceSettings": {
+   "stability": 0.4,
+   "similarity_boost": 0.8,
+   "style": 0.35,
+   "speed": 1.2,
+   "use_speaker_boost": true
+  }
+ },
+ "language": "id",
+ "overlap": 0.3,
+ "replace": {
+  "delapan puluh delapan": "88",
+  "tiga ratus empat puluh empat ribuan": "344 RIBUAN",
+  "diponegoro": "DIPONEGORO",
+  "jember": "JEMBER",
+  "sepuluh": "10",
+  "lima belas": "15",
+  "matahari johar": "MATAHARI JOHAR"
+ },
+ "lines": [
+  "Ke Jember nggak bawa kendaraan? Tenang, nginep aja di tengah kotanya.",
+  "Hotel delapan puluh delapan ini ada di Jalan Diponegoro, pas di jantung kota.",
+  "Semalamnya mulai tiga ratus empat puluh empat ribuan, kamarnya luas lagi.",
+  "Ke alun-alun cukup jalan kaki sepuluh menit aja, ke stasiun lima belas menit.",
+  "Jendela kamarnya langsung ngadep atap-atap kota, adem lihatnya.",
+  "Mau yang lebih lega? Ada kamar yang punya ruang makan sendiri.",
+  "Pagi-pagi, sarapan prasmanan dulu di bawah, lauknya banyak.",
+  "Habis itu kamu ngopi di kafenya, ada sepeda merah nempel di dinding.",
+  "Sore-sore, lihat langit Jember dari balkon atas.",
+  "Malamnya tinggal jalan keluar, pasar sama Matahari Johar deket banget.",
+  "Biar nggak lupa, lokasinya udah aku tag di pojok kiri ya."
+ ]
+}
