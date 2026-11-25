@@ -1,0 +1,280 @@
+{
+ "nama": "Royal Hotel n' Resto Jember",
+ "bahan": "../bahan-gmaps",
+ "title": [
+  "Nengok anak",
+  "kuliah di Jember"
+ ],
+ "card": {
+  "photo": "gm_081.jpg",
+  "badge": "Dekat kampus",
+  "name": "Kamar Deluxe",
+  "chips": [
+   "2 tamu",
+   "Kolam renang"
+  ],
+  "notes": [],
+  "price": "336.880",
+  "priceNote": "per malam · Agoda",
+  "button": "Pesan",
+  "from": [
+   3,
+   "MULAI"
+  ],
+  "toLineEnd": 3,
+  "countLabel": "MULAI"
+ },
+ "shots": [
+  {
+   "src": "gm_150.jpg",
+   "line": 1,
+   "move": "dolly3d",
+   "in": "cut"
+  },
+  {
+   "src": "gm_051.jpg",
+   "line": 1,
+   "move": "panR",
+   "in": "whipL",
+   "word": "KULIAH"
+  },
+  {
+   "src": "gm_037.jpg",
+   "line": 2,
+   "move": "zoomIn",
+   "in": "flash",
+   "layout": "frame",
+   "label": "Jl. Karimata 50"
+  },
+  {
+   "src": "gm_065.jpg",
+   "line": 2,
+   "move": "tiltUp",
+   "in": "slice",
+   "word": "LIMA"
+  },
+  {
+   "src": "gm_081.jpg",
+   "line": 3,
+   "move": "zoomOut",
+   "in": "dip"
+  },
+  {
+   "src": "gm_062.jpg",
+   "line": 3,
+   "move": "zoomIn",
+   "in": "push",
+   "word": "KAMARNYA"
+  },
+  {
+   "src": "gm_133.jpg",
+   "line": 4,
+   "move": "panL",
+   "in": "zoom"
+  },
+  {
+   "src": "gm_043.jpg",
+   "line": 4,
+   "move": "punch",
+   "punch": [
+    4,
+    "ROYAL"
+   ],
+   "in": "whipU",
+   "word": "DINDING"
+  },
+  {
+   "src": "gm_075.jpg",
+   "line": 5,
+   "move": "tiltDown",
+   "in": "leak",
+   "layout": "split2",
+   "extra": [
+    "gm_146.jpg"
+   ]
+  },
+  {
+   "src": "gm_112.jpg",
+   "line": 5,
+   "move": "zoomIn",
+   "in": "iris",
+   "word": "ISTIRAHAT"
+  },
+  {
+   "src": "gm_011.jpg",
+   "line": 6,
+   "move": "drift",
+   "in": "spin",
+   "layout": "split3",
+   "extra": [
+    "gm_040.jpg",
+    "gm_113.jpg"
+   ]
+  },
+  {
+   "src": "gm_033.jpg",
+   "line": 7,
+   "move": "panR",
+   "in": "dip"
+  },
+  {
+   "src": "gm_087.jpg",
+   "line": 7,
+   "move": "tiltUp",
+   "in": "glitch",
+   "word": "CAKEP"
+  },
+  {
+   "src": "gm_058.jpg",
+   "line": 8,
+   "move": "zoomOut",
+   "in": "leak"
+  },
+  {
+   "src": "gm_072.jpg",
+   "line": 8,
+   "move": "roll",
+   "in": "drop",
+   "word": "LIHAT"
+  },
+  {
+   "src": "gm_141.jpg",
+   "line": 9,
+   "move": "drift",
+   "in": "whipR",
+   "layout": "grid4",
+   "extra": [
+    "gm_147.jpg",
+    "gm_152.jpg",
+    "gm_128.jpg"
+   ]
+  },
+  {
+   "src": "gm_162.jpg",
+   "line": 9,
+   "move": "zoomIn",
+   "in": "flash",
+   "word": "RESTORAN"
+  },
+  {
+   "src": "gm_001.jpg",
+   "line": 10,
+   "move": "panL",
+   "in": "push"
+  },
+  {
+   "src": "gm_029.jpg",
+   "line": 11,
+   "move": "ramp",
+   "in": "zoom"
+  },
+  {
+   "src": "gm_024.jpg",
+   "line": 11,
+   "word": "TAG",
+   "move": "zoomOut",
+   "in": "iris"
+  }
+ ],
+ "titleStyle": "type",
+ "priceStyle": "count",
+ "look": {
+  "name": "kenangan-wisuda",
+  "font": "anton",
+  "grade": "film",
+  "grain": 0.05,
+  "vignette": 0.28,
+  "shake": 0.18
+ },
+ "emph": [
+  "NENGOK",
+  "LIMA",
+  "MENIT",
+  "MERAH",
+  "ROYAL",
+  "PUTIH",
+  "KOLAM",
+  "LAMPU-LAMPU",
+  "CAKEP",
+  "SARAPAN",
+  "RESTORAN",
+  "WISUDA"
+ ],
+ "hits": [
+  {
+   "line": 1,
+   "word": "NENGOK",
+   "fx": "pulse"
+  },
+  {
+   "line": 4,
+   "word": "ROYAL",
+   "fx": "flash"
+  },
+  {
+   "line": 7,
+   "word": "CAKEP",
+   "fx": "zoom"
+  },
+  {
+   "line": 10,
+   "word": "WISUDA",
+   "fx": "shake"
+  }
+ ],
+ "captions": [
+  {
+   "line": 1,
+   "style": "typeon"
+  },
+  {
+   "line": 2,
+   "style": "emph"
+  },
+  {
+   "line": 3,
+   "style": "box"
+  },
+  {
+   "line": 4,
+   "style": "slam"
+  },
+  {
+   "line": 5,
+   "style": "note"
+  },
+  {
+   "line": 6,
+   "style": "stack"
+  },
+  {
+   "line": 7,
+   "style": "emph"
+  },
+  {
+   "line": 8,
+   "style": "typeon"
+  },
+  {
+   "line": 9,
+   "style": "slam"
+  },
+  {
+   "line": 10,
+   "style": "karaoke"
+  },
+  {
+   "line": 11,
+   "style": "box"
+  }
+ ],
+ "music": {
+  "file": "musik/free-uplifting-music.mp3",
+  "volume": 0.12
+ },
+ "cta": {
+  "line": 11,
+  "word": "TAG"
+ },
+ "tier": "sedang"
+}

@@ -1,0 +1,34 @@
+{
+ "tts": {
+  "provider": "elevenlabs",
+  "voiceId": "iWydkXKoiVtvdn4vLKp9",
+  "modelId": "eleven_multilingual_v2",
+  "voiceSettings": {
+   "stability": 0.4,
+   "similarity_boost": 0.8,
+   "style": 0.35,
+   "speed": 1.2,
+   "use_speaker_boost": true
+  }
+ },
+ "language": "id",
+ "overlap": 0.3,
+ "replace": {
+  "tiga ratus tiga puluh enam ribuan": "336 RIBUAN",
+  "royal": "ROYAL",
+  "universitas jember": "UNIVERSITAS JEMBER"
+ },
+ "lines": [
+  "Anak kamu kuliah di Jember, terus kamu mau datang nengok dia?",
+  "Nginep aja di sini, cuma lima menit dari Universitas Jember.",
+  "Semalamnya mulai tiga ratus tiga puluh enam ribuan, kamarnya cukup buat berdua.",
+  "Begitu masuk lobi, kamu langsung disambut dinding merah bertuliskan Royal.",
+  "Kamarnya putih bersih, pas banget buat istirahat habis perjalanan jauh.",
+  "Sorenya, kamu bisa duduk santai di pinggir kolam renang yang panjang ini.",
+  "Malamnya lampu-lampu kecil di atas kolam menyala, cakep banget deh.",
+  "Pagi-pagi, sarapan dulu sambil lihat air kolam, enak kan?",
+  "Terus ajak anakmu makan bareng di restoran hotelnya, menunya lengkap kok.",
+  "Pas hari wisuda nanti, kamu tinggal berangkat, nggak perlu buru-buru.",
+  "Simpan dulu videonya, lokasinya udah aku tag di sini ya."
+ ]
+}

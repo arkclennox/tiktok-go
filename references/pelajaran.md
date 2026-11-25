@@ -66,3 +66,4 @@ Kalau sebuah pelajaran bisa dicek mesin, tambahkan juga ke `template/lint.py` (a
 - [2026-11-25] Pohon Inn: galeri hotel di dalam kebun binatang = 400+ foto, sebagian besar kebun binatang; fasad Batu Secret Zoo dipan menyisakan atap merah saja -> pakai foto yang memperlihatkan pintu hotel + papan; foto prasasti peresmian jangan jadi shot penutup.
 - [2026-11-25] Freesound API 403 (kunci ditolak/limit) -> pakai musik lokal yang belum dipakai video sebelumnya; cek `python3 ~/sfx/tools/fs.py check` dulu.
 - [2026-11-25] cek.mjs: 3 dari ±150 frame masih kena "delayRender font" walau satu browser -> coba ulang menyelesaikannya; jangan hapus mekanisme ulang.
+- [2026-11-26] Royal Jember: URL foto diambil dari file tool-results LAMA (galeri Pohon Inn) -> 345 foto salah terunduh. Ambil URL dari hasil javascript_tool yang BARU (cek satu URL pertama ada di file, atau `grep -c` URL pertama ≠ 0) sebelum unduh.sh.
