@@ -1,0 +1,284 @@
+{
+ "nama": "Java Lotus Hotel Jember",
+ "bahan": "../bahan-gmaps",
+ "title": [
+  "Kolam di atap",
+  "kota Jember"
+ ],
+ "card": {
+  "photo": "gm_007.jpg",
+  "badge": "Bintang 4",
+  "name": "Java Lotus Hotel",
+  "chips": [
+   "Sky pool",
+   "Sky lounge"
+  ],
+  "notes": [],
+  "price": "502.688",
+  "priceNote": "per malam · tiket.com",
+  "button": "Pesan",
+  "from": [
+   10,
+   "SEMUA"
+  ],
+  "toLineEnd": 10,
+  "countLabel": "MULAI",
+  "stub": "SANTAI"
+ },
+ "shots": [
+  {
+   "src": "gm_012.jpg",
+   "line": 1,
+   "move": "ramp",
+   "in": "cut"
+  },
+  {
+   "src": "gm_039.jpg",
+   "line": 1,
+   "move": "panR",
+   "in": "spin",
+   "word": "SAMBIL"
+  },
+  {
+   "src": "gm_237.jpg",
+   "line": 2,
+   "move": "zoomIn",
+   "in": "whipU",
+   "layout": "frame",
+   "label": "Jl. Gatot Subroto 47"
+  },
+  {
+   "src": "gm_091.jpg",
+   "line": 2,
+   "move": "tiltUp",
+   "in": "leak",
+   "word": "BINTANG"
+  },
+  {
+   "src": "gm_196.jpg",
+   "line": 3,
+   "move": "panR",
+   "in": "glitch"
+  },
+  {
+   "src": "gm_240.jpg",
+   "line": 3,
+   "move": "zoomIn",
+   "in": "dip",
+   "word": "GUNUNGNYA"
+  },
+  {
+   "src": "gm_025.jpg",
+   "line": 4,
+   "move": "drift",
+   "in": "flash",
+   "layout": "split2",
+   "extra": [
+    "gm_243.jpg"
+   ]
+  },
+  {
+   "src": "gm_049.jpg",
+   "line": 4,
+   "move": "tiltUp",
+   "in": "iris",
+   "word": "LEBAR"
+  },
+  {
+   "src": "gm_206.jpg",
+   "line": 5,
+   "move": "panL",
+   "in": "push"
+  },
+  {
+   "src": "gm_080.jpg",
+   "line": 5,
+   "move": "punch",
+   "in": "slice",
+   "punch": [
+    5,
+    "MEGAH"
+   ],
+   "word": "KOSTUM"
+  },
+  {
+   "src": "gm_221.jpg",
+   "line": 6,
+   "move": "tiltDown",
+   "in": "zoom"
+  },
+  {
+   "src": "gm_207.jpg",
+   "line": 6,
+   "move": "zoomOut",
+   "in": "whipL",
+   "word": "MATAHARI"
+  },
+  {
+   "src": "gm_026.jpg",
+   "line": 7,
+   "move": "roll",
+   "in": "drop"
+  },
+  {
+   "src": "gm_102.jpg",
+   "line": 7,
+   "move": "zoomIn",
+   "in": "whipR",
+   "word": "PIZZA"
+  },
+  {
+   "src": "gm_112.jpg",
+   "line": 8,
+   "move": "drift",
+   "in": "leak",
+   "layout": "grid4",
+   "extra": [
+    "gm_041.jpg",
+    "gm_073.jpg",
+    "gm_097.jpg"
+   ]
+  },
+  {
+   "src": "gm_070.jpg",
+   "line": 9,
+   "move": "panR",
+   "in": "iris"
+  },
+  {
+   "src": "gm_228.jpg",
+   "line": 9,
+   "move": "zoomIn",
+   "in": "flash",
+   "word": "KUENYA"
+  },
+  {
+   "src": "gm_007.jpg",
+   "line": 10,
+   "move": "zoomOut",
+   "in": "push"
+  },
+  {
+   "src": "gm_010.jpg",
+   "line": 10,
+   "move": "panL",
+   "in": "glitch",
+   "word": "PAS"
+  },
+  {
+   "src": "gm_145.jpg",
+   "line": 11,
+   "move": "zoomIn",
+   "in": "dip"
+  },
+  {
+   "src": "gm_244.jpg",
+   "line": 11,
+   "move": "dolly3d",
+   "in": "zoom",
+   "word": "TAG"
+  }
+ ],
+ "titleStyle": "note",
+ "priceStyle": "ticket",
+ "look": {
+  "name": "kolam-di-atap",
+  "font": "fraunces",
+  "grade": "punchy",
+  "grain": 0.03,
+  "vignette": 0.25,
+  "shake": 0.18
+ },
+ "emph": [
+  "ATAP",
+  "SELURUH",
+  "LOTUS",
+  "BINTANG",
+  "MANJAIN",
+  "LANGIT",
+  "GUNUNGNYA",
+  "LEBAR",
+  "MEGAH",
+  "MATAHARI",
+  "PIZZA",
+  "NONGKRONG",
+  "KUENYA"
+ ],
+ "hits": [
+  {
+   "line": 1,
+   "word": "ATAP",
+   "fx": "pulse"
+  },
+  {
+   "line": 3,
+   "word": "LANGIT",
+   "fx": "flash"
+  },
+  {
+   "line": 5,
+   "word": "MEGAH",
+   "fx": "zoom"
+  },
+  {
+   "line": 7,
+   "word": "PIZZA",
+   "fx": "shake"
+  }
+ ],
+ "captions": [
+  {
+   "line": 1,
+   "style": "slam"
+  },
+  {
+   "line": 2,
+   "style": "rambu"
+  },
+  {
+   "line": 3,
+   "style": "stack"
+  },
+  {
+   "line": 4,
+   "style": "emph"
+  },
+  {
+   "line": 5,
+   "style": "box"
+  },
+  {
+   "line": 6,
+   "style": "note"
+  },
+  {
+   "line": 7,
+   "style": "typeon"
+  },
+  {
+   "line": 8,
+   "style": "emph"
+  },
+  {
+   "line": 9,
+   "style": "note"
+  },
+  {
+   "line": 10,
+   "style": "box"
+  },
+  {
+   "line": 11,
+   "style": "typeon"
+  }
+ ],
+ "music": {
+  "file": "musik/tropicorp-advertisement.mp3",
+  "volume": 0.12
+ },
+ "cta": {
+  "line": 11,
+  "word": "TAG"
+ },
+ "tier": "mahal"
+}

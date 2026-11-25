@@ -1,0 +1,37 @@
+{
+ "tts": {
+  "provider": "elevenlabs",
+  "voiceId": "iWydkXKoiVtvdn4vLKp9",
+  "modelId": "eleven_multilingual_v2",
+  "voiceSettings": {
+   "stability": 0.4,
+   "similarity_boost": 0.8,
+   "style": 0.35,
+   "speed": 1.2,
+   "use_speaker_boost": true
+  }
+ },
+ "language": "id",
+ "overlap": 0.3,
+ "replace": {
+  "jawa lotus": "JAVA LOTUS",
+  "bintang empat": "BINTANG 4",
+  "lima ratus dua ribuan": "502 RIBUAN",
+  "skai launj": "SKY LOUNGE",
+  "gatot subroto": "GATOT SUBROTO",
+  "jember": "JEMBER"
+ },
+ "lines": [
+  "Pernah berenang di atap gedung, sambil lihat seluruh kota Jember?",
+  "Kolamnya ada di Jawa Lotus, hotel bintang empat di Jalan Gatot Subroto.",
+  "Airnya kayak nyambung sama langit, gunungnya kelihatan dari ujung kolam.",
+  "Kamarnya lega, jendelanya lebar, langsung ngadep kota.",
+  "Turun ke lobi, kamu disambut kostum penari Jawa yang megah banget.",
+  "Sore-sore balik lagi ke kolam, nungguin matahari turun pelan-pelan.",
+  "Malamnya lampu kota nyala semua, terus makan pizza di pinggir kolam.",
+  "Mau lanjut nongkrong? Naik aja ke Skai Launj.",
+  "Paginya sarapan prasmanan, kuenya banyak banget.",
+  "Semua ini mulai lima ratus dua ribuan semalam, pas buat manjain diri di akhir pekan.",
+  "Mau nyobain? Cek tag lokasinya di video ini ya."
+ ]
+}
