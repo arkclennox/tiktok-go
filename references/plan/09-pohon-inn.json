@@ -1,0 +1,250 @@
+{
+ "nama": "Pohon Inn Hotel",
+ "tier": "sedang",
+ "bahan": "../bahan-gmaps",
+ "title": [
+  "Nginep di",
+  "dalam pohon?"
+ ],
+ "titleStyle": "slam",
+ "priceStyle": "sticker",
+ "card": {
+  "photo": "gm_074.jpg",
+  "badge": "Seru",
+  "name": "Kamar Superior",
+  "chips": [
+   "2 tamu",
+   "Balkon"
+  ],
+  "notes": [],
+  "price": "473.632",
+  "priceNote": "per malam",
+  "button": "Pesan",
+  "from": [
+   2,
+   "CUMA"
+  ],
+  "toLineEnd": 2,
+  "countLabel": "MULAI"
+ },
+ "look": {
+  "name": "hutan-ceria",
+  "font": "archivo",
+  "grade": "punchy",
+  "grain": 0.02,
+  "vignette": 0.22,
+  "shake": 0.18
+ },
+ "emph": [
+  "POHON",
+  "RAKSASA",
+  "BALKON",
+  "GUA",
+  "HEWAN",
+  "HUTAN",
+  "GUNUNG",
+  "AKUARIUM",
+  "JERAPAH",
+  "KEBUN",
+  "BINATANGNYA"
+ ],
+ "hits": [
+  {
+   "line": 1,
+   "word": "RAKSASA",
+   "fx": "zoom"
+  },
+  {
+   "line": 4,
+   "word": "GUA",
+   "fx": "shake"
+  },
+  {
+   "line": 7,
+   "word": "AKUARIUM",
+   "fx": "pulse"
+  },
+  {
+   "line": 8,
+   "word": "JERAPAH",
+   "fx": "flash"
+  }
+ ],
+ "captions": [
+  {
+   "line": 1,
+   "style": "note"
+  },
+  {
+   "line": 2,
+   "style": "stack"
+  },
+  {
+   "line": 3,
+   "style": "emph"
+  },
+  {
+   "line": 4,
+   "style": "slam"
+  },
+  {
+   "line": 5,
+   "style": "karaoke"
+  },
+  {
+   "line": 6,
+   "style": "note"
+  },
+  {
+   "line": 7,
+   "style": "stack"
+  },
+  {
+   "line": 8,
+   "style": "slam"
+  },
+  {
+   "line": 9,
+   "style": "emph"
+  },
+  {
+   "line": 10,
+   "style": "karaoke"
+  },
+  {
+   "line": 11,
+   "style": "box"
+  }
+ ],
+ "music": {
+  "file": "musik/upbeat-background-music.mp3",
+  "volume": 0.12
+ },
+ "cta": {
+  "line": 11,
+  "word": "TAG"
+ },
+ "shots": [
+  {
+   "src": "gm_043.jpg",
+   "line": 1,
+   "move": "roll",
+   "in": "cut"
+  },
+  {
+   "src": "gm_054.jpg",
+   "line": 1,
+   "move": "tiltUp",
+   "in": "flash",
+   "word": "RAKSASA"
+  },
+  {
+   "src": "gm_101.jpg",
+   "line": 2,
+   "move": "zoomIn",
+   "in": "whipR"
+  },
+  {
+   "src": "gm_037.jpg",
+   "line": 3,
+   "move": "tiltDown",
+   "in": "dip"
+  },
+  {
+   "src": "gm_196.jpg",
+   "line": 3,
+   "move": "panL",
+   "in": "slice",
+   "word": "GEDUNGNYA"
+  },
+  {
+   "src": "gm_008.jpg",
+   "line": 4,
+   "move": "zoomOut",
+   "in": "push"
+  },
+  {
+   "src": "gm_116.jpg",
+   "line": 4,
+   "move": "drift",
+   "in": "glitch",
+   "word": "GUA"
+  },
+  {
+   "src": "gm_074.jpg",
+   "line": 5,
+   "move": "tiltUp",
+   "in": "leak"
+  },
+  {
+   "src": "gm_059.jpg",
+   "line": 5,
+   "move": "panR",
+   "in": "whipU",
+   "word": "DINDINGNYA"
+  },
+  {
+   "src": "gm_136.jpg",
+   "line": 6,
+   "move": "dolly3d",
+   "in": "iris"
+  },
+  {
+   "src": "gm_087.jpg",
+   "line": 6,
+   "move": "zoomIn",
+   "in": "zoom",
+   "word": "NGOPI"
+  },
+  {
+   "src": "gm_088.jpg",
+   "line": 7,
+   "move": "drift",
+   "in": "spin",
+   "layout": "split2",
+   "extra": [
+    "gm_105.jpg"
+   ]
+  },
+  {
+   "src": "gm_152.jpg",
+   "line": 8,
+   "move": "zoomOut",
+   "in": "drop",
+   "layout": "frame",
+   "label": "jerapah!"
+  },
+  {
+   "src": "gm_131.jpg",
+   "line": 9,
+   "move": "tiltUp",
+   "in": "whipL"
+  },
+  {
+   "src": "gm_214.jpg",
+   "line": 10,
+   "move": "drift",
+   "in": "flash",
+   "layout": "grid4",
+   "extra": [
+    "gm_182.jpg",
+    "gm_009.jpg",
+    "gm_189.jpg"
+   ]
+  },
+  {
+   "src": "gm_062.jpg",
+   "line": 11,
+   "move": "ramp",
+   "in": "push"
+  },
+  {
+   "src": "gm_052.jpg",
+   "line": 11,
+   "word": "TAG",
+   "move": "zoomOut",
+   "in": "zoom"
+  }
+ ],
+ "titleY": 170
+}

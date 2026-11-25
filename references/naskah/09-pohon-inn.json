@@ -1,0 +1,34 @@
+{
+ "tts": {
+  "provider": "elevenlabs",
+  "voiceId": "iWydkXKoiVtvdn4vLKp9",
+  "modelId": "eleven_multilingual_v2",
+  "voiceSettings": {
+   "stability": 0.4,
+   "similarity_boost": 0.8,
+   "style": 0.35,
+   "speed": 1.2,
+   "use_speaker_boost": true
+  }
+ },
+ "language": "id",
+ "overlap": 0.3,
+ "replace": {
+  "empat ratus tujuh puluh ribuan": "470 RIBUAN",
+  "pohon inn": "POHON INN",
+  "jatim park dua": "JATIM PARK 2"
+ },
+ "lines": [
+  "Pernah kebayang nginep di dalam batang pohon raksasa? Di Batu ada lho.",
+  "Cuma empat ratus tujuh puluh ribuan semalam, tiap kamarnya punya balkon sendiri.",
+  "Namanya Pohon Inn, gedungnya beneran dibikin mirip batang pohon.",
+  "Masuk lobinya aja, kamu langsung disambut gua batu sama boneka hewan.",
+  "Kamarnya rapi, dindingnya bermotif daun-daun hutan.",
+  "Pagi-pagi buka balkon, terus ngopi sambil lihat gunung.",
+  "Sarapannya di restoran yang dikelilingi pohon dan akuarium besar.",
+  "Ada patung jerapah juga, anak-anak pasti seneng banget foto di sini.",
+  "Soalnya hotel ini ada di dalam kawasan Jatim Park dua.",
+  "Jadi habis sarapan, tinggal jalan kaki ke kebun binatangnya.",
+  "Mau liburan seru bareng si kecil? Tag lokasinya udah ada di video ini ya."
+ ]
+}

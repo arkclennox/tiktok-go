@@ -42,7 +42,7 @@ Kalau menambah gaya baru: cari dulu acuan luar (artikel 2025–2026, blok hyperf
 | `shots[].z` / `oy` | zoom dasar & geser tegak (px) satu shot penuh; prep.py ikut memperbesar resolusi |
 | `look` | `{name, font: montserrat/anton/archivo/fraunces, grade: none/warm/cool/punchy/film, grain 0–0.1, vignette 0–0.5, accent "#hex", shake ≈0.18}` — `font` = huruf utama judul/caption/harga (anton tinggi ramping, archivo lebar tebal, fraunces serif untuk tier mahal) |
 | `music` | `{file: "musik/<nama>.mp3", volume ≈0.13}` dari `~/sfx/musik` (CC0); prep.py menggeser titik mulai agar ketukan jatuh di potongan shot (beat-sync, `hyperframes beats`). Wajib, kecuali `musicOff` |
-| `cta` | `{line, word, x?, y?}` — pin lokasi bergaya logo brand memantul + panah ke tag lokasi |
+| `cta` | `{line, word}` — pin lokasi bergaya logo brand memantul + panah ke tag lokasi, SELALU di kiri (jangan isi x); caption baris itu jangan `stack` |
 | `sfx` / `sfxOff` | ganti berkas efek suara (kunci: whoosh swish shutter thud pop glitch shimmer click coin) atau matikan |
 
 Efek suara otomatis mengikuti transisi/hentakan, dari `~/sfx` (CC0, `sfxDir` di `~/.config/tiktok-go/config.json`).

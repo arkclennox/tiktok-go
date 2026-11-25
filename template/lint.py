@@ -170,6 +170,10 @@ if np_ < 4: err.append(f"naskah kaku: cuma {np_} baris berbahasa obrolan (kamu/a
 for i, l in enumerate(lines, 1):
     if l.count(",") >= 4: err.append(f"baris {i} berupa daftar ({l.count(',')} koma) -> TTS membacanya datar; pecah jadi kalimat lisan")
     if re.search(r"\b(parkir|parkiran|wi-?fi|internet|ac|tv|handuk|kamar mandi)\b", l.lower()): err.append(f"baris {i} menjual fasilitas yang pasti ada di semua penginapan ('{l}') -> ganti dengan keunggulan yang benar-benar beda")
+# pin lokasi SELALU di kiri (pemilik 2026-11-25: "pin lokasi harusnya selalu dikiri"); yang menyesuaikan = caption, bukan pin
+if P.get("cta"):
+    if "x" in P["cta"]: err.append("cta.x diisi -> pin lokasi selalu di kiri (aturan pemilik); hapus cta.x, geser/ganti caption baris itu")
+    if cap.get(P["cta"]["line"]) == "stack": err.append("caption baris CTA bergaya stack (rata kiri) menabrak pin di kiri -> pakai gaya tengah (box/emph/karaoke/note/typeon)")
 # tier harga (SKILL.md langkah 1 & 4): penginapan mahal ditekankan ke pengalaman/fasilitas, bukan harga
 tier = P.get("tier")
 if tier not in ("murah", "sedang", "mahal"): err.append('plan.json "tier" harus murah/sedang/mahal (jalankan scripts/harga-kota.js)')
