@@ -1,0 +1,271 @@
+{
+ "nama": "Hotel Siti Jember",
+ "bahan": "../bahan-gmaps",
+ "title": [
+  "Kolam renang",
+  "buat si kecil"
+ ],
+ "card": {
+  "photo": "gm_009.jpg",
+  "badge": "Bintang 2",
+  "name": "Hotel Siti Jember",
+  "chips": [
+   "Kolam anak & dewasa",
+   "Ruang main"
+  ],
+  "notes": [],
+  "price": "255.744",
+  "priceNote": "per malam · Traveloka",
+  "button": "Pesan",
+  "from": [
+   2,
+   "MULAI"
+  ],
+  "toLineEnd": 2,
+  "countLabel": "MULAI"
+ },
+ "shots": [
+  {
+   "src": "gm_009.jpg",
+   "line": 1,
+   "move": "roll",
+   "in": "cut"
+  },
+  {
+   "src": "gm_019.jpg",
+   "line": 1,
+   "move": "panR",
+   "in": "whipU",
+   "word": "TAPI"
+  },
+  {
+   "src": "gm_015.jpg",
+   "line": 2,
+   "move": "tiltUp",
+   "in": "slice",
+   "layout": "frame",
+   "label": "Jl. Moch. Sruji 36"
+  },
+  {
+   "src": "gm_001.jpg",
+   "line": 2,
+   "move": "zoomIn",
+   "in": "flash",
+   "word": "MULAI"
+  },
+  {
+   "src": "gm_043.jpg",
+   "line": 3,
+   "move": "drift",
+   "in": "iris"
+  },
+  {
+   "src": "gm_073.jpg",
+   "line": 3,
+   "move": "panL",
+   "in": "leak",
+   "word": "TANAMAN"
+  },
+  {
+   "src": "gm_022.jpg",
+   "line": 4,
+   "move": "zoomIn",
+   "in": "dip"
+  },
+  {
+   "src": "gm_069.jpg",
+   "line": 4,
+   "move": "tiltDown",
+   "in": "glitch",
+   "word": "SEKAT"
+  },
+  {
+   "src": "gm_052.jpg",
+   "line": 5,
+   "move": "panR",
+   "in": "push"
+  },
+  {
+   "src": "gm_080.jpg",
+   "line": 5,
+   "move": "zoomOut",
+   "in": "drop",
+   "word": "TOSKA"
+  },
+  {
+   "src": "gm_062.jpg",
+   "line": 6,
+   "move": "punch",
+   "in": "spin",
+   "punch": [
+    6,
+    "MAIN"
+   ]
+  },
+  {
+   "src": "gm_109.jpg",
+   "line": 6,
+   "move": "zoomIn",
+   "in": "whipL",
+   "word": "FOOSBALL"
+  },
+  {
+   "src": "gm_100.jpg",
+   "line": 7,
+   "move": "drift",
+   "in": "zoom",
+   "layout": "split2",
+   "extra": [
+    "gm_040.jpg"
+   ]
+  },
+  {
+   "src": "gm_017.jpg",
+   "line": 8,
+   "move": "tiltUp",
+   "in": "dip"
+  },
+  {
+   "src": "gm_034.jpg",
+   "line": 8,
+   "move": "zoomIn",
+   "in": "flash",
+   "word": "BIRU"
+  },
+  {
+   "src": "gm_099.jpg",
+   "line": 9,
+   "move": "panL",
+   "in": "whipR"
+  },
+  {
+   "src": "gm_118.jpg",
+   "line": 9,
+   "move": "roll",
+   "in": "iris",
+   "word": "CAKEP"
+  },
+  {
+   "src": "gm_094.jpg",
+   "line": 10,
+   "move": "zoomOut",
+   "in": "push"
+  },
+  {
+   "src": "gm_032.jpg",
+   "line": 11,
+   "move": "zoomIn",
+   "in": "leak"
+  },
+  {
+   "src": "gm_024.jpg",
+   "line": 11,
+   "move": "dolly3d",
+   "in": "zoom",
+   "word": "TAG"
+  }
+ ],
+ "titleStyle": "slam",
+ "priceStyle": "count",
+ "look": {
+  "name": "kolam-keluarga",
+  "font": "anton",
+  "grade": "cool",
+  "grain": 0.03,
+  "vignette": 0.2,
+  "shake": 0.15
+ },
+ "emph": [
+  "BERENANG",
+  "SITI",
+  "255",
+  "TROPIS",
+  "ANAK",
+  "DEWASA",
+  "SEKAT",
+  "TOSKA",
+  "PANTAI",
+  "FOOSBALL",
+  "NGETEH",
+  "BIRU",
+  "CAKEP",
+  "SERU"
+ ],
+ "hits": [
+  {
+   "line": 1,
+   "word": "BERENANG",
+   "fx": "pulse"
+  },
+  {
+   "line": 4,
+   "word": "SEKAT",
+   "fx": "shake"
+  },
+  {
+   "line": 6,
+   "word": "FOOSBALL",
+   "fx": "zoom"
+  },
+  {
+   "line": 8,
+   "word": "BIRU",
+   "fx": "flash"
+  }
+ ],
+ "captions": [
+  {
+   "line": 1,
+   "style": "slam"
+  },
+  {
+   "line": 2,
+   "style": "note"
+  },
+  {
+   "line": 3,
+   "style": "karaoke"
+  },
+  {
+   "line": 4,
+   "style": "rambu"
+  },
+  {
+   "line": 5,
+   "style": "emph"
+  },
+  {
+   "line": 6,
+   "style": "note"
+  },
+  {
+   "line": 7,
+   "style": "box"
+  },
+  {
+   "line": 8,
+   "style": "karaoke"
+  },
+  {
+   "line": 9,
+   "style": "rambu"
+  },
+  {
+   "line": 10,
+   "style": "slam"
+  },
+  {
+   "line": 11,
+   "style": "typeon"
+  }
+ ],
+ "music": {
+  "file": "musik/blue-sky.mp3",
+  "volume": 0.12
+ },
+ "cta": {
+  "line": 11,
+  "word": "TAG"
+ },
+ "tier": "sedang"
+}
