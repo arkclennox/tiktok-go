@@ -1,0 +1,36 @@
+{
+ "tts": {
+  "provider": "elevenlabs",
+  "voiceId": "iWydkXKoiVtvdn4vLKp9",
+  "modelId": "eleven_multilingual_v2",
+  "voiceSettings": {
+   "stability": 0.4,
+   "similarity_boost": 0.8,
+   "style": 0.35,
+   "speed": 1.2,
+   "use_speaker_boost": true
+  }
+ },
+ "language": "id",
+ "overlap": 0.3,
+ "replace": {
+  "luminor": "LUMINOR",
+  "agus salim": "AGUS SALIM",
+  "tiga ratus empat puluh delapan ribuan": "348 RIBUAN",
+  "jember": "JEMBER",
+  "bali": "BALI"
+ },
+ "lines": [
+  "Ada resort tersembunyi di tengah kota Jember, kayak jarum dalam jerami.",
+  "Namanya Luminor Hotel, di Jalan Agus Salim, mulai tiga ratus empat puluh delapan ribuan semalam.",
+  "Begitu masuk, kamu langsung dikepung taman yang rindang banget.",
+  "Kolam ikan koinya panjang, ada air mancur di tengahnya.",
+  "Malamnya lampu taman nyala, suasananya tenang kayak di Bali.",
+  "Kamarnya model resort, buka pintu langsung duduk di teras ngadep taman.",
+  "Paginya sarapan prasmanan, daging sapi lada hitamnya enak banget.",
+  "Habis itu ngopi di kafenya, ditemenin mural yang warna-warni.",
+  "Lobinya lega, enak buat ngobrol santai bareng teman.",
+  "Pas buat kamu yang pengin kabur sebentar, tanpa harus keluar kota.",
+  "Penasaran? Langsung cek tag lokasinya di video ini, ya."
+ ]
+}

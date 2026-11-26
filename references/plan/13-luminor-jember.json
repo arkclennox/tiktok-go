@@ -1,0 +1,277 @@
+{
+ "nama": "Luminor Hotel Jember",
+ "bahan": "../bahan-gmaps",
+ "title": [
+  "Resort rahasia",
+  "tengah kota Jember"
+ ],
+ "card": {
+  "photo": "gm_043.jpg",
+  "badge": "Bintang 3",
+  "name": "Luminor Hotel",
+  "chips": [
+   "Taman rindang",
+   "Kolam koi"
+  ],
+  "notes": [],
+  "price": "348.528",
+  "priceNote": "per malam · Trip.com",
+  "button": "Pesan",
+  "from": [
+   2,
+   "MULAI"
+  ],
+  "toLineEnd": 2,
+  "countLabel": "MULAI"
+ },
+ "shots": [
+  {
+   "src": "gm_012.jpg",
+   "line": 1,
+   "move": "dolly3d",
+   "in": "cut"
+  },
+  {
+   "src": "gm_043.jpg",
+   "line": 1,
+   "move": "panL",
+   "in": "slice",
+   "word": "JARUM"
+  },
+  {
+   "src": "gm_014.jpg",
+   "line": 2,
+   "move": "zoomIn",
+   "in": "whipL",
+   "layout": "frame",
+   "label": "Jl. KH Agus Salim 28"
+  },
+  {
+   "src": "gm_101.jpg",
+   "line": 2,
+   "move": "tiltUp",
+   "in": "flash",
+   "word": "MULAI"
+  },
+  {
+   "src": "gm_105.jpg",
+   "line": 3,
+   "move": "panR",
+   "in": "drop"
+  },
+  {
+   "src": "gm_063.jpg",
+   "line": 3,
+   "move": "zoomOut",
+   "in": "iris",
+   "word": "TAMAN"
+  },
+  {
+   "src": "gm_052.jpg",
+   "line": 4,
+   "move": "tiltDown",
+   "in": "push"
+  },
+  {
+   "src": "gm_162.jpg",
+   "line": 4,
+   "move": "punch",
+   "in": "zoom",
+   "punch": [
+    4,
+    "AIR"
+   ],
+   "word": "MANCUR"
+  },
+  {
+   "src": "gm_070.jpg",
+   "line": 5,
+   "move": "drift",
+   "in": "dip"
+  },
+  {
+   "src": "gm_083.jpg",
+   "line": 5,
+   "move": "zoomIn",
+   "in": "leak",
+   "word": "TENANG"
+  },
+  {
+   "src": "gm_080.jpg",
+   "line": 6,
+   "move": "panL",
+   "in": "whipR"
+  },
+  {
+   "src": "gm_081.jpg",
+   "line": 6,
+   "move": "roll",
+   "in": "glitch",
+   "word": "LANGSUNG"
+  },
+  {
+   "src": "gm_084.jpg",
+   "line": 7,
+   "move": "zoomIn",
+   "in": "spin"
+  },
+  {
+   "src": "gm_111.jpg",
+   "line": 7,
+   "move": "tiltUp",
+   "in": "flash",
+   "word": "LADA"
+  },
+  {
+   "src": "gm_165.jpg",
+   "line": 8,
+   "move": "drift",
+   "in": "iris",
+   "layout": "split2",
+   "extra": [
+    "gm_173.jpg"
+   ]
+  },
+  {
+   "src": "gm_129.jpg",
+   "line": 9,
+   "move": "panR",
+   "in": "whipU"
+  },
+  {
+   "src": "gm_130.jpg",
+   "line": 9,
+   "move": "zoomOut",
+   "in": "slice",
+   "word": "SANTAI"
+  },
+  {
+   "src": "gm_103.jpg",
+   "line": 10,
+   "move": "tiltUp",
+   "in": "push"
+  },
+  {
+   "src": "gm_027.jpg",
+   "line": 10,
+   "move": "ramp",
+   "in": "drop",
+   "word": "KABUR"
+  },
+  {
+   "src": "gm_086.jpg",
+   "line": 11,
+   "move": "zoomIn",
+   "in": "dip"
+  },
+  {
+   "src": "gm_071.jpg",
+   "line": 11,
+   "move": "zoomOut",
+   "in": "zoom",
+   "word": "TAG"
+  }
+ ],
+ "titleStyle": "mask",
+ "priceStyle": "sticker",
+ "look": {
+  "name": "resort-rindang",
+  "font": "archivo",
+  "grade": "warm",
+  "grain": 0.03,
+  "vignette": 0.22,
+  "shake": 0.15
+ },
+ "emph": [
+  "RESORT",
+  "JARUM",
+  "LUMINOR",
+  "348",
+  "RINDANG",
+  "KOINYA",
+  "MANCUR",
+  "BALI",
+  "TERAS",
+  "LADA",
+  "MURAL",
+  "SANTAI",
+  "KABUR"
+ ],
+ "hits": [
+  {
+   "line": 1,
+   "word": "JARUM",
+   "fx": "pulse"
+  },
+  {
+   "line": 4,
+   "word": "MANCUR",
+   "fx": "flash"
+  },
+  {
+   "line": 7,
+   "word": "LADA",
+   "fx": "shake"
+  },
+  {
+   "line": 10,
+   "word": "KABUR",
+   "fx": "zoom"
+  }
+ ],
+ "captions": [
+  {
+   "line": 1,
+   "style": "karaoke"
+  },
+  {
+   "line": 2,
+   "style": "rambu"
+  },
+  {
+   "line": 3,
+   "style": "stack"
+  },
+  {
+   "line": 4,
+   "style": "box"
+  },
+  {
+   "line": 5,
+   "style": "slam"
+  },
+  {
+   "line": 6,
+   "style": "emph"
+  },
+  {
+   "line": 7,
+   "style": "karaoke"
+  },
+  {
+   "line": 8,
+   "style": "rambu"
+  },
+  {
+   "line": 9,
+   "style": "stack"
+  },
+  {
+   "line": 10,
+   "style": "box"
+  },
+  {
+   "line": 11,
+   "style": "typeon"
+  }
+ ],
+ "music": {
+  "file": "musik/a-ukulele-tune.mp3",
+  "volume": 0.12
+ },
+ "cta": {
+  "line": 11,
+  "word": "TAG"
+ },
+ "tier": "sedang"
+}
